@@ -1,0 +1,117 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "cdcb44c1-ca93-4404-8940-9c9682bbfa79")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 120.65 36.83)
+		(size 57.15 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "279adbf4-04dc-41c9-b42b-2ee8e68e4ac0")
+		(property "Sheetname" "CAN Interface"
+			(at 120.65 36.1184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can_interface.kicad_sch"
+			(at 120.65 65.3546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/cdcb44c1-ca93-4404-8940-9c9682bbfa79"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 30.48)
+		(size 49.53 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ff74ec68-4250-4b47-864c-38451a102d3f")
+		(property "Sheetname" "Pico"
+			(at 33.02 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pico.kicad_sch"
+			(at 33.02 65.3546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 33.02 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/cdcb44c1-ca93-4404-8940-9c9682bbfa79"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
