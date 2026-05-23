@@ -1,4 +1,0 @@
-(sym_lib_table
-	(version 7)
-	(lib (name "MCP2518FDT-E_SL") (type "KiCad") (uri "${KIPRJMOD}/Library/MCP2518FDT-E_SL/MCP2518FDT-E_SL.kicad_sym") (options "") (descr ""))
-)
