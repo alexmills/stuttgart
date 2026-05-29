@@ -1,6 +1,6 @@
 # Project Stuttgart
 
-*Last Updated: 23rd May 2026*
+*Last Updated: 29th May 2026*
 
 > Named after the founding location of Bosch in 1886, where a team in 1983 started development of the Connected Area Network.
 
@@ -15,8 +15,6 @@ A small web app connects to the tool using WebUSB (in Chrome/Edge) to control an
 ## Isolation & Safety
 
 The microcontroller and USB are completely isolated from the components connected to the vehicle electronics through the CAN bus, protecting the laptop and user from any potential voltage differences between chassis ground and mains earth. This isolation also eliminates ground loops, improves signal integrity, and provides a clean ground reference for the vehicle measurements.
-
----
 
 ## Target Vehicle / Networks
 
@@ -43,24 +41,25 @@ The current state of the project as follows:
 
 ## Active Components
 
-| Component               | Part No                        | JLC No    | Status |
-| ----------------------- | ------------------------------ | --------- | ------ |
-| MCU                     | Raspberry Pi RP2354A           | C41378174 | ✅      |
-| CAN FD Controller       | Microchip MCP2518FD            |           | ❓      |
-| CAN FD Transceiver      | Microchip ATA6563              |           | ❓      |
-| Isolated DC-DC          | Recom R05CT05S                 |           | ❓      |
-| Digital Isolators       | TI ISO7741 x2                  |           | ❓      |
-| 3.3V LDO (Vehicle Side) | Microchip MCP1700-3302E        |           | ❓      |
-| 3.3V LDO (MCU Side)     | OnSemi NCV1117ST33T3G          | C114733   | ✅      |
-| Voltage ADC             | MCP3202                        |           | ❓      |
-| MCP2518FD Oscillator    | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      |
-| 12MHz Crystal           | Abracon ABM8-272-T3            | C20625731 | ✅      |
-| SMPS Inductor           | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      |
-| TVS Diodes              | SMBJ5.0A x2                    |           | ❓      |
-| Schottky Clamp          | BAT54 x2                       |           | ❓      |
-| BOOTSEL Button          | Wurth 434133025816             | C5504987  | ✅      |
-| USB-C Connector         | G-Switch GT-USB-7047C          | C963218   | ✅      |
-| SWD Header              | Pomona 73099 2× red 1× black   | Mouser... | ✅      |
+| Component            | Part No                        | JLC No    | Status | Models |
+| -------------------- | ------------------------------ | --------- | ------ | ------ |
+| MCU                  | Raspberry Pi RP2354A           | C41378174 | ✅      | ✅      |
+| CAN FD Controller    | Microchip MCP2518FD            | C621395   | ✅      | ✅      |
+| CAN FD Transceiver   | Microchip ATA6563              | C5127614  | ✅      | ✅      |
+| Voltage ADC          | MCP3202-CI/SN                  | C56997    | ✅      | ✅      |
+| Isolated DC-DC       | TI UCC12040DVER                | C5216535  | ✅      | ✅      |
+| Digital Isolator 1   | TI ISO7741 (3F/1R)             | C913840   | ✅      | ✅      |
+| Digital Isolator 2   | TI ISO7742 (2F/2R)             | C2868557  | ✅      | ✅      |
+| 3.3V LDO (CAN Side)  | Microchip MCP1700T-3302E/TT    | C39051    | ✅      | ✅      |
+| 3.3V LDO (MCU Side)  | OnSemi NCV1117ST33T3G          | C114733   | ✅      | ✅      |
+| MCP2518FD Oscillator | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      |        |
+| 12MHz Crystal        | Abracon ABM8-272-T3            | C20625731 | ✅      |        |
+| SMPS Inductor        | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      |        |
+| TVS Diodes           | SMBJ5.0A x2                    |           | ❓      |        |
+| Schottky Clamp       | BAT54 x2                       |           | ❓      |        |
+| BOOTSEL Button       | Wurth 434133025816             | C5504987  | ✅      |        |
+| USB-C Connector      | G-Switch GT-USB-7047C          | C963218   | ✅      |        |
+| SWD Header           | Pomona 73099 2× red 1× black   | Mouser... | ✅      |        |
 
 ## Vehicle Interface
 
