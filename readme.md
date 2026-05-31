@@ -68,7 +68,7 @@ The current state of the project as follows:
 
 Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
 
-![[stuttgart-system-overview-v1.jpg]]
+![System Overview](stuttgart-system-overview-v1.jpg)
 
 ### Vehicle / USB Isolation
 
