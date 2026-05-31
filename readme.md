@@ -1,13 +1,13 @@
 # Project Stuttgart
 
-*Last Updated: 29th May 2026*
+*Last Updated: 31st May 2026*
 
 > Named after the founding location of Bosch in 1886, where a team in 1983 started development of the Connected Area Network.
 
 The goal for this research project is to explore the benefits of having a clearer look at the CAN bus during vehicle diagnostics, instead of relying solely on multimeter or oscilloscope measurements.
 ## Overview
 
-The tool connects to the CAN bus in a **read only** capacity, receiving messages and monitoring bus health while simultaneously measuring the voltage on the High and Low signal lines to identify physical layer faults. The CAN controller's transmit line is disabled entirely, preventing any data from being written to the bus whether it's intentional or accidental.
+The tool connects to the CAN bus in a **read only** capacity, receiving messages and monitoring bus health while simultaneously measuring the voltage on the High and Low signal lines to identify physical layer faults. The CAN controller's transmit line is still connected for some future experiments with J1939.
 
 A small web app connects to the tool using WebUSB (in Chrome/Edge) to control and monitor its data output in real time. 
 
@@ -39,7 +39,7 @@ The current state of the project as follows:
 - [ ] App Implementation
 - [ ] Testing
 
-## Active Components
+## Main Components
 
 | Component            | Part No                        | JLC No    | Status | Models |
 | -------------------- | ------------------------------ | --------- | ------ | ------ |
@@ -52,15 +52,32 @@ The current state of the project as follows:
 | Digital Isolator 2   | TI ISO7742 (2F/2R)             | C2868557  | ✅      | ✅      |
 | 3.3V LDO (CAN Side)  | Microchip MCP1700T-3302E/TT    | C39051    | ✅      | ✅      |
 | 3.3V LDO (MCU Side)  | OnSemi NCV1117ST33T3G          | C114733   | ✅      | ✅      |
-| MCP2518FD Oscillator | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      |        |
-| 12MHz Crystal        | Abracon ABM8-272-T3            | C20625731 | ✅      |        |
-| SMPS Inductor        | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      |        |
-| TVS Diodes           | SMBJ5.0A x2                    |           | ❓      |        |
-| Schottky Clamp       | BAT54 x2                       |           | ❓      |        |
-| BOOTSEL Button       | Wurth 434133025816             | C5504987  | ✅      |        |
-| USB-C Connector      | G-Switch GT-USB-7047C          | C963218   | ✅      |        |
-| SWD Header           | Pomona 73099 2× red 1× black   | Mouser... | ✅      |        |
+| MCP2518FD Oscillator | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      | ❓      |
+| 12MHz Crystal        | Abracon ABM8-272-T3            | C20625731 | ✅      | ❓      |
+| SMPS Inductor        | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      | ❓      |
+| TVS Diodes           | SMBJ5.0A x2                    |           | ❓      | ❓      |
+| Schottky Clamp       | BAT54 x2                       |           | ❓      | ❓      |
+| BOOTSEL Button       | Wurth 434133025816             | C5504987  | ✅      | ✅      |
+| USB-C Connector      | G-Switch GT-USB-7047C          | C963218   | ✅      | ❓      |
+| SWD Header           | JST SM03B-SRSS-TB              | C160403   | ✅      | ✅      |
+| CANH Socket          | Cliff FCR7350Y (Yellow)        | Digikey   | ✅      | ✅      |
+| CANL Socket          | Cliff FCR7350G (Green)         | Digikey   | ✅      | ✅      |
+| GND Socket           | Cliff FCR7350B (Black)         | Digikey   | ✅      | ✅      |
 
-## Vehicle Interface
+## System Architecture
 
-The CAN communication to the vehicle is achieved using a Microchip MCP2518FD CAN-FD ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf)) controller paired with the recommended ATA6563 transceiver. The controller is connected to the MCU through digital isolators using SPI. These two are cheap (~$2) components and appear to be commonly used in the industry.
+Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
+
+![[stuttgart-system-overview-v1.jpg]]
+
+### Vehicle / USB Isolation
+
+The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series digital isolators ([Datasheet](https://www.ti.com/lit/ds/symlink/iso7742.pdf)). Both have a SPI throughput of 100Mbps, providing more than enough headroom for the CAN Controller and ADC.
+
+The 5V supply from the USB-C connector is isolated using a Texas Instruments UCC12040 DC-DC Module ([Datasheet](https://www.ti.com/lit/ds/symlink/ucc12040.pdf)), providing 3kV protection, low EMI and 500mW of output power.
+
+Between these 3 components, there is no physical connection between the vehicle and the USB connector.
+
+### Vehicle Interface
+
+The CAN communication to the vehicle is achieved using a Microchip MCP2518FD CAN-FD ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf)) controller paired with the recommended ATA6563 Microchip transceiver ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/ATA6562.3-Data-Sheet-20005790E.pdf)). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
