@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Stuttgart") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/Stuttgart.pretty") (options "") (descr ""))
+)

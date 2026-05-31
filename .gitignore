@@ -2,3 +2,5 @@ hardware/.history/
 firmware/.DS_Store
 hardware/.DS_Store
 .DS_Store
+*.lck
+/hardware/Stuttgart-backups
