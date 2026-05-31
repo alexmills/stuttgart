@@ -31,8 +31,8 @@ The current state of the project as follows:
 
 - [x] Project Scope
 - [x] Architecture & Protocol Design
-- [ ] Component Selection (Active)
-- [ ] Schematic Design
+- [x] Component Selection
+- [ ] Schematic Design (Active)
 - [ ] PCB Design
 - [ ] Enclosure Design
 - [ ] Firmware Implementation
@@ -41,28 +41,28 @@ The current state of the project as follows:
 
 ## Main Components
 
-| Component            | Part No                        | JLC No    | Status | Models |
-| -------------------- | ------------------------------ | --------- | ------ | ------ |
-| MCU                  | Raspberry Pi RP2354A           | C41378174 | ✅      | ✅      |
-| CAN FD Controller    | Microchip MCP2518FD            | C621395   | ✅      | ✅      |
-| CAN FD Transceiver   | Microchip ATA6563              | C5127614  | ✅      | ✅      |
-| Voltage ADC          | MCP3202-CI/SN                  | C56997    | ✅      | ✅      |
-| Isolated DC-DC       | TI UCC12040DVER                | C5216535  | ✅      | ✅      |
-| Digital Isolator 1   | TI ISO7741 (3F/1R)             | C913840   | ✅      | ✅      |
-| Digital Isolator 2   | TI ISO7742 (2F/2R)             | C2868557  | ✅      | ✅      |
-| 3.3V LDO (CAN Side)  | Microchip MCP1700T-3302E/TT    | C39051    | ✅      | ✅      |
-| 3.3V LDO (MCU Side)  | OnSemi NCV1117ST33T3G          | C114733   | ✅      | ✅      |
-| MCP2518FD Oscillator | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      | ❓      |
-| 12MHz Crystal        | Abracon ABM8-272-T3            | C20625731 | ✅      | ❓      |
-| SMPS Inductor        | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      | ❓      |
-| TVS Diodes           | SMBJ5.0A x2                    |           | ❓      | ❓      |
-| Schottky Clamp       | BAT54 x2                       |           | ❓      | ❓      |
-| BOOTSEL Button       | Wurth 434133025816             | C5504987  | ✅      | ✅      |
-| USB-C Connector      | G-Switch GT-USB-7047C          | C963218   | ✅      | ❓      |
-| SWD Header           | JST SM03B-SRSS-TB              | C160403   | ✅      | ✅      |
-| CANH Socket          | Cliff FCR7350Y (Yellow)        | Digikey   | ✅      | ✅      |
-| CANL Socket          | Cliff FCR7350G (Green)         | Digikey   | ✅      | ✅      |
-| GND Socket           | Cliff FCR7350B (Black)         | Digikey   | ✅      | ✅      |
+| Component              | Part No                        | JLC No    | Status | Models |
+| ---------------------- | ------------------------------ | --------- | ------ | ------ |
+| MCU                    | Raspberry Pi RP2354A           | C41378174 | ✅      | 📦     |
+| CAN FD Controller      | Microchip MCP2518FD            | C621395   | ✅      | ✅      |
+| CAN FD Transceiver     | Microchip ATA6563              | C5127614  | ✅      | ✅      |
+| Voltage ADC            | MCP3202-CI/SN                  | C56997    | ✅      | ✅      |
+| Isolated DC-DC         | TI UCC12040DVER                | C5216535  | ✅      | ✅      |
+| Digital Isolator 1     | TI ISO7741 (3F/1R)             | C913840   | ✅      | ✅      |
+| Digital Isolator 2     | TI ISO7742 (2F/2R)             | C2868557  | ✅      | ✅      |
+| 3.3V LDO (CAN Side)    | Microchip MCP1700T-3302E/TT    | C39051    | ✅      | ✅      |
+| 3.3V LDO (MCU Side)    | OnSemi NCV1117ST33T3G          | C114733   | ✅      | ✅      |
+| MCP2518FD Oscillator   | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      | 📦     |
+| 12MHz Crystal          | Abracon ABM8-272-T3            | C20625731 | ✅      | ✅      |
+| SMPS Inductor          | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      | ✅      |
+| Transceiver TVS Diodes | Littelfuse SMBJ5.0A x2         | C83333    | ✅      | 📦     |
+| ADC Zener Diodes       | Onsemi BZX84C3V3LT1G           | C82473    | ✅      | 📦     |
+| BOOTSEL Button         | Wurth 434133025816             | C5504987  | ✅      | ✅      |
+| USB-C Connector        | GCT USB4105-GF-060             | C3025063  | ✅      | 📦     |
+| SWD Header             | JST SM03B-SRSS-TB              | C160403   | ✅      | ✅      |
+| CANH Socket            | Cliff FCR7350Y (Yellow)        | Digikey   | ✅      | ✅      |
+| CANL Socket            | Cliff FCR7350G (Green)         | Digikey   | ✅      | ✅      |
+| GND Socket             | Cliff FCR7350B (Black)         | Digikey   | ✅      | ✅      |
 
 ## System Architecture
 
@@ -81,3 +81,26 @@ Between these 3 components, there is no physical connection between the vehicle 
 ### Vehicle Interface
 
 The CAN communication to the vehicle is achieved using a Microchip MCP2518FD CAN-FD ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf)) controller paired with the recommended ATA6563 Microchip transceiver ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/ATA6562.3-Data-Sheet-20005790E.pdf)). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
+
+## Bus ADC Measurements
+
+The voltage divider for each bus is `R1 = 10kΩ` and `R2 = 47kΩ` so the ratio is calculated as:
+
+```
+Vout = Vin x (R2 / (R1 + R2))
+Vout = Vin x (47,000 / (10,000 + 47,000))
+Vout = Vin x (47,000 / 57,000)
+Vout = Vin x 0.8246
+```
+
+Below are the estimated values for the ADC measurements at various bus voltages using the above divider with a protection zener diode, clamping at ~3.3V, keeping the ADC within safe limits (3.6V Max). 
+
+| Bus Voltage | ADC Voltage | RAW ADC Value | Notes                         |
+| ----------- | ----------- | ------------- | ----------------------------- |
+| 0           | 0           | 0             | Bus Dead / Off                |
+| 1.5         | 1.237       | 1535          | CAN L Dominant                |
+| 2.5         | 2.062       | 2559          | Recessive Idle                |
+| 3.5         | 2.886       | 3583          | CAN H Dominant                |
+| **3.9**     | **3.223**   | **4000**      | **Clean bus fault threshold** |
+| 4.0         | 3.300       | 4095          | Zener Activates               |
+| Over 4.0    | 3.300       | 4095          | Clamped - Fault Condition     |
