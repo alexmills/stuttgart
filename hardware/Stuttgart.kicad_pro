@@ -636,13 +636,21 @@
         "uuid": "6d354744-ce95-4d5c-b7ae-1990dae66f7b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "IC1,S1,R1-5,#PWR3-13,C8-12,J1",
     "variants": []
   },
   "sheets": [
     [
       "6d354744-ce95-4d5c-b7ae-1990dae66f7b",
       "Root"
+    ],
+    [
+      "1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81",
+      "RP2354A"
+    ],
+    [
+      "304bef4f-add0-487c-b718-54fa10a4bc8f",
+      "USB Power"
     ]
   ],
   "text_variables": {},
