@@ -3081,6 +3081,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 132.08) (xy 255.27 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0623dc1f-aab8-403a-9d82-ce1a54eeb431")
+	)
+	(wire
+		(pts
 			(xy 166.37 39.37) (xy 177.8 39.37)
 		)
 		(stroke
@@ -3108,6 +3118,16 @@
 			(type default)
 		)
 		(uuid "0cfe9381-8216-4340-9af3-29c026785e88")
+	)
+	(wire
+		(pts
+			(xy 238.76 116.84) (xy 250.19 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fee73d7-666f-4357-aadb-624f63a75952")
 	)
 	(wire
 		(pts
@@ -3148,6 +3168,16 @@
 			(type default)
 		)
 		(uuid "1345c233-2b52-4d9d-8022-51eb3ffac702")
+	)
+	(wire
+		(pts
+			(xy 238.76 139.7) (xy 255.27 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170916c5-3348-4a0b-a947-53ba377c66e5")
 	)
 	(wire
 		(pts
@@ -3401,6 +3431,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 114.3) (xy 250.19 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bcb9942-a030-4de3-9c6b-d582617bfbb4")
+	)
+	(wire
+		(pts
 			(xy 40.64 40.64) (xy 44.45 40.64)
 		)
 		(stroke
@@ -3428,6 +3468,16 @@
 			(type default)
 		)
 		(uuid "56a72283-959b-413c-b2d1-7118706b5d03")
+	)
+	(wire
+		(pts
+			(xy 238.76 119.38) (xy 250.19 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "570a85ee-0df0-4ddc-a3aa-a61626004700")
 	)
 	(wire
 		(pts
@@ -3521,6 +3571,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 137.16) (xy 255.27 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7519500f-83af-4cc8-9216-47dcb7a25bff")
+	)
+	(wire
+		(pts
 			(xy 182.88 86.36) (xy 182.88 78.74)
 		)
 		(stroke
@@ -3528,6 +3588,16 @@
 			(type default)
 		)
 		(uuid "75c2e7ae-17a6-4f15-bd12-19cfb3040702")
+	)
+	(wire
+		(pts
+			(xy 238.76 111.76) (xy 250.19 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77046973-7c72-4397-a31c-a770e758f24e")
 	)
 	(wire
 		(pts
@@ -4261,6 +4331,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 134.62) (xy 255.27 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f55e6410-0aaf-431e-9d8f-ead582b76313")
+	)
+	(wire
+		(pts
 			(xy 177.8 39.37) (xy 177.8 38.1)
 		)
 		(stroke
@@ -4389,6 +4469,16 @@
 		)
 		(uuid "2ca63b3b-9b40-49ea-9e64-8e160d045af4")
 	)
+	(label "SPI0_TX"
+		(at 250.19 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "400364df-2e75-4b87-860a-b600355591a5")
+	)
 	(label "VREG_AVDD"
 		(at 195.58 43.18 270)
 		(effects
@@ -4499,6 +4589,26 @@
 		)
 		(uuid "89c68e6e-bde7-42f2-9ef1-8caa334775ac")
 	)
+	(label "SPI0_RX"
+		(at 250.19 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a86a880-a84e-4174-aaf7-12aef29d729e")
+	)
+	(label "CAN_STBY"
+		(at 250.19 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "985b5e83-ab9b-4b82-856d-1db11a66cb34")
+	)
 	(label "XIN"
 		(at 175.26 116.84 0)
 		(effects
@@ -4528,6 +4638,46 @@
 			(justify left bottom)
 		)
 		(uuid "a26d99b2-d07e-4c4d-9aec-6ed924a4cbf1")
+	)
+	(label "SPI1_SCK"
+		(at 255.27 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3eacf53-2a95-4fa3-a468-656f6acacfe1")
+	)
+	(label "SPI0_SCK"
+		(at 250.19 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a51b316d-103e-4e03-8144-ddf2a795cb9d")
+	)
+	(label "SPI1_TX"
+		(at 255.27 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a54d0e3a-5561-40cc-b8a6-3763c2820e56")
+	)
+	(label "SPI1_RX"
+		(at 255.27 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5908521-d125-411d-a153-105802b66705")
 	)
 	(label "BOOT_NO"
 		(at 69.85 168.91 0)
@@ -4578,6 +4728,16 @@
 			(justify right bottom)
 		)
 		(uuid "df05a1a1-287e-4b8f-a5b0-50c60174e283")
+	)
+	(label "CAN_INTERRUPT"
+		(at 255.27 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f3a43d1b-a794-4651-ad27-21d6f0986bb7")
 	)
 	(label "SWCLK"
 		(at 153.67 167.64 180)
