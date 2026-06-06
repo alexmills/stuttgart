@@ -3171,16 +3171,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 139.7) (xy 255.27 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "170916c5-3348-4a0b-a947-53ba377c66e5")
-	)
-	(wire
-		(pts
 			(xy 91.44 127) (xy 46.99 127)
 		)
 		(stroke
@@ -4738,16 +4728,6 @@
 			(justify right bottom)
 		)
 		(uuid "df05a1a1-287e-4b8f-a5b0-50c60174e283")
-	)
-	(label "CAN_INTERRUPT"
-		(at 255.27 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f3a43d1b-a794-4651-ad27-21d6f0986bb7")
 	)
 	(label "SWCLK"
 		(at 153.67 167.64 180)
