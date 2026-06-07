@@ -197,6 +197,7 @@
         0.0,
         0.15,
         0.2,
+        0.3,
         0.4,
         0.6
       ],
@@ -653,7 +654,7 @@
         "uuid": "6d354744-ce95-4d5c-b7ae-1990dae66f7b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR26-29,C18-21",
     "variants": []
   },
   "sheets": [
@@ -672,6 +673,10 @@
     [
       "915c1d30-8224-4c06-b75a-21624dbd5336",
       "Vehicle Interface"
+    ],
+    [
+      "ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1",
+      "Isolation"
     ]
   ],
   "text_variables": {},
