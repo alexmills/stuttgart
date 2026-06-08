@@ -44,8 +44,7 @@ The current state of the project as follows:
 | Component              | Part No                        | JLC No    | Status | Models |
 | ---------------------- | ------------------------------ | --------- | ------ | ------ |
 | MCU                    | Raspberry Pi RP2354A           | C41378174 | ✅      | 📦     |
-| CAN FD Controller      | Microchip MCP2518FD            | C621395   | ✅      | ✅      |
-| CAN FD Transceiver     | Microchip ATA6563              | C5127614  | ✅      | ✅      |
+| CAN FD Controller      | Microchip MCP251863            | C20295647 | ✅      | ✅      |
 | Voltage ADC            | MCP3202-CI/SN                  | C56997    | ✅      | ✅      |
 | Isolated DC-DC         | TI UCC12040DVER                | C5216535  | ✅      | ✅      |
 | Digital Isolator 1     | TI ISO7741 (3F/1R)             | C913840   | ✅      | ✅      |
@@ -68,16 +67,30 @@ The current state of the project as follows:
 
 Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
 
-![System Overview](content/stuttgart-system-overview-v1.jpg)
+![System Overview](stuttgart-system-overview-v1.1.jpg)
 
 ### Vehicle / USB Isolation
 
-The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series digital isolators ([Datasheet](https://www.ti.com/lit/ds/symlink/iso7742.pdf)). Both have a SPI throughput of 100Mbps, providing more than enough headroom for the CAN Controller and ADC.
-
 The 5V supply from the USB-C connector is isolated using a Texas Instruments UCC12040 DC-DC Module ([Datasheet](https://www.ti.com/lit/ds/symlink/ucc12040.pdf)), providing 3kV protection, low EMI and 500mW of output power.
 
-Between these 3 components, there is no physical connection between the vehicle and the USB connector.
+The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series digital isolators ([Datasheet](https://www.ti.com/lit/ds/symlink/iso7742.pdf)). Both have a SPI throughput of 100Mbps, providing more than enough headroom for the CAN Controller and ADC.
 
+**ISO7742 (2F/2R) - SPI0 - MCP251863
+
+| Channel | Signal   |
+| ------- | -------- |
+| F1      | SPI0 SCK |
+| F2      | SPI0 TX  |
+| R1      | SPI0 RX  |
+| R2      | INT      |
+**ISO7741 (3F/1R) - SPI1 - MCP3202**
+
+| Channel | Signal   |
+| ------- | -------- |
+| F1      | SPI1 SCK |
+| F2      | SP1 TX   |
+| F3      | Spare    |
+| R1      | SP1 RX   |
 ### Vehicle Interface
 
 The CAN communication to the vehicle is achieved using a Microchip MCP2518FD CAN-FD ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf)) controller paired with the recommended ATA6563 Microchip transceiver ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/ATA6562.3-Data-Sheet-20005790E.pdf)). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
