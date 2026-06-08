@@ -1,6 +1,6 @@
 # Project Stuttgart
 
-*Last Updated: 31st May 2026*
+*Last Updated: 8th June 2026*
 
 > Named after the founding location of Bosch in 1886, where a team in 1983 started development of the Connected Area Network.
 
@@ -67,7 +67,7 @@ The current state of the project as follows:
 
 Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
 
-![System Overview](stuttgart-system-overview-v1.1.jpg)
+![System Overview](content/stuttgart-system-overview-v1.1.jpg)
 
 ### Vehicle / USB Isolation
 
