@@ -83,6 +83,7 @@ The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series di
 | F2      | SPI0 TX  |
 | R1      | SPI0 RX  |
 | R2      | INT      |
+
 **ISO7741 (3F/1R) - SPI1 - MCP3202**
 
 | Channel | Signal   |
@@ -91,6 +92,7 @@ The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series di
 | F2      | SP1 TX   |
 | F3      | Spare    |
 | R1      | SP1 RX   |
+
 ### Vehicle Interface
 
 The CAN communication to the vehicle is achieved using a Microchip MCP2518FD CAN-FD ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf)) controller paired with the recommended ATA6563 Microchip transceiver ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/ATA6562.3-Data-Sheet-20005790E.pdf)). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
