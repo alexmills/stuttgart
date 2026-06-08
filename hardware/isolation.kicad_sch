@@ -160,6 +160,198 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Stuttgart:MCP1700T-3302E_TT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "IC"
+				(at 24.13 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "MCP1700T-3302E_TT"
+				(at 24.13 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Stuttgart:SOT95P237X112-3N"
+				(at 24.13 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-4/sf-00090030.pdf"
+				(at 24.13 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "LDO voltage regulator 250mA Isupply 1uA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "1.12"
+				(at 24.13 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "579-MCP1700T3302E/TT"
+				(at 24.13 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1700T-3302E-TT?qs=fM4xO01eazPmCNDrdHEdaw%3D%3D"
+				(at 24.13 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Microchip"
+				(at 24.13 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "MCP1700T-3302E/TT"
+				(at 24.13 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "MCP1700T-3302E_TT_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 22.86 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 0 180)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Stuttgart:UCC12040DVER"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -576,6 +768,145 @@
 						)
 					)
 					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3VA"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3VA"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3VA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3VA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1095,6 +1426,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "3V3-1"
+		(exclude_from_sim no)
+		(at 167.132 22.098 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "e91d2bab-268a-4cd2-b270-4545e7da8e32")
+	)
 	(text "5V DC-DC"
 		(exclude_from_sim no)
 		(at 76.2 21.844 0)
@@ -1136,6 +1477,12 @@
 		(uuid "6413da40-aaa4-401e-8b55-14d8d8e88f74")
 	)
 	(junction
+		(at 167.64 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b745587-df6c-48a0-acd4-94a2c1d85224")
+	)
+	(junction
 		(at 95.25 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1152,6 +1499,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8857e75a-e70c-43cf-816b-fc816b949c2f")
+	)
+	(junction
+		(at 184.15 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dc8e718-72f7-4443-a645-101e9ecc5b00")
+	)
+	(junction
+		(at 148.59 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae2aa954-6ed8-41bc-ba0d-213106cf3e89")
 	)
 	(junction
 		(at 55.88 50.8)
@@ -1176,6 +1535,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be5bb11a-ede0-4f15-9529-54b39e1e8a4e")
+	)
+	(junction
+		(at 180.34 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c379757c-71dd-467d-a5d1-b550e5e81415")
 	)
 	(junction
 		(at 97.79 40.64)
@@ -1213,6 +1578,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 40.64) (xy 184.15 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "022a91a0-bcbe-4c8e-b675-5383eddef540")
+	)
+	(wire
+		(pts
 			(xy 118.11 40.64) (xy 105.41 40.64)
 		)
 		(stroke
@@ -1233,6 +1608,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 40.64) (xy 184.15 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ee4e38-fa2c-464a-ab14-8db405dd38d0")
+	)
+	(wire
+		(pts
 			(xy 105.41 40.64) (xy 105.41 41.91)
 		)
 		(stroke
@@ -1243,6 +1628,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 40.64) (xy 146.05 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11a4d1fc-6711-441e-99ec-dff4d5f1e837")
+	)
+	(wire
+		(pts
 			(xy 93.98 50.8) (xy 95.25 50.8)
 		)
 		(stroke
@@ -1250,6 +1645,16 @@
 			(type default)
 		)
 		(uuid "1785d361-25b9-48ee-86c4-aef2f8360a7a")
+	)
+	(wire
+		(pts
+			(xy 148.59 43.18) (xy 152.4 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18dac2f5-c98a-491b-aeaa-d815559435f3")
 	)
 	(wire
 		(pts
@@ -1313,6 +1718,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 40.64) (xy 187.96 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4509b6a0-cbb4-4aaf-9bb7-b031226e984a")
+	)
+	(wire
+		(pts
 			(xy 55.88 53.34) (xy 55.88 55.88)
 		)
 		(stroke
@@ -1363,6 +1778,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 53.34) (xy 184.15 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b89a10-055c-4733-aa67-1392b5106282")
+	)
+	(wire
+		(pts
 			(xy 97.79 43.18) (xy 97.79 40.64)
 		)
 		(stroke
@@ -1400,6 +1825,16 @@
 			(type default)
 		)
 		(uuid "60e46f2b-55a6-469f-b49b-92f33f2f3bca")
+	)
+	(wire
+		(pts
+			(xy 146.05 43.18) (xy 148.59 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66533513-2a85-41b8-8d69-e01d40ea4d9c")
 	)
 	(wire
 		(pts
@@ -1453,6 +1888,26 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 43.18) (xy 148.59 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fda9402-ec16-4462-8227-182ad22487d7")
+	)
+	(wire
+		(pts
+			(xy 148.59 53.34) (xy 167.64 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c74024-a150-4b4c-90df-7ad1e474a7c4")
+	)
+	(wire
+		(pts
 			(xy 93.98 53.34) (xy 95.25 53.34)
 		)
 		(stroke
@@ -1480,6 +1935,16 @@
 			(type default)
 		)
 		(uuid "9f066377-45a0-4df7-8f13-7db864bba290")
+	)
+	(wire
+		(pts
+			(xy 180.34 53.34) (xy 184.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0f34ebe-c996-46c1-aea1-d13f052d7c6e")
 	)
 	(wire
 		(pts
@@ -1530,6 +1995,16 @@
 			(type default)
 		)
 		(uuid "a8c53d3b-20af-4c55-9dc3-c09320c2ef12")
+	)
+	(wire
+		(pts
+			(xy 187.96 40.64) (xy 187.96 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a95092f3-410a-4d57-87ff-ab14258294c1")
 	)
 	(wire
 		(pts
@@ -1603,6 +2078,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 43.18) (xy 180.34 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd3ff95d-f2e5-4129-868a-9586e9846598")
+	)
+	(wire
+		(pts
 			(xy 93.98 38.1) (xy 95.25 38.1)
 		)
 		(stroke
@@ -1643,6 +2128,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 53.34) (xy 180.34 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d96373bb-1736-4405-ba3e-284641afb5a9")
+	)
+	(wire
+		(pts
 			(xy 30.48 43.18) (xy 30.48 40.64)
 		)
 		(stroke
@@ -1680,6 +2175,26 @@
 			(type default)
 		)
 		(uuid "e4f0cbf1-83ec-4043-b1b4-22f315ac8bfb")
+	)
+	(wire
+		(pts
+			(xy 167.64 53.34) (xy 167.64 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5420667-9b46-4515-ba66-1709767d18bb")
+	)
+	(wire
+		(pts
+			(xy 148.59 52.07) (xy 148.59 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e64fee43-ea4a-405c-a672-d537e8c60fe9")
 	)
 	(wire
 		(pts
@@ -1852,6 +2367,84 @@
 			(project "Stuttgart"
 				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 187.96 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0eb65563-f18f-4d11-a87e-e27ee2fc2d36")
+		(property "Reference" "#PWR032"
+			(at 187.96 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 187.96 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 187.96 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77b32666-6bb0-4fbc-9925-8b9759e64318")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -2124,6 +2717,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND1")
+		(at 167.64 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4022667c-318a-47a8-b920-d6317e4aff53")
+		(property "Reference" "#PWR030"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND1"
+			(at 167.64 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 167.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d30f4ecf-54b6-41e1-848c-f36b41a998d5")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 55.88 55.88 0)
 		(unit 1)
@@ -2196,6 +2867,170 @@
 			(project "Stuttgart"
 				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7325c462-4278-440a-a0d5-319243a9fda9")
+		(property "Reference" "C22"
+			(at 152.4 46.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 152.4 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 149.5552 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor, ceramic, 1 µF, 10 V,+/- 10%, X7R, 0402"
+			(at 148.59 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b29925f-6613-4e77-96fd-541ef753a7bc")
+		)
+		(pin "2"
+			(uuid "a9edcf32-6392-4969-b41b-58a6ca6679b6")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 184.15 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "816369d3-188c-4adb-afe4-89e89dfbb52c")
+		(property "Reference" "C23"
+			(at 187.96 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 187.96 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 185.1152 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor, ceramic, 1 µF, 10 V,+/- 10%, X7R, 0402"
+			(at 184.15 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a7a5958-2dd4-4b38-aeb1-2554ee2c7f6d")
+		)
+		(pin "2"
+			(uuid "63dfcbd9-730d-4501-89b4-7e8d5de4bb79")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -2600,6 +3435,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 146.05 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee43155d-297c-4940-ae95-3499f9d65227")
+		(property "Reference" "#PWR031"
+			(at 146.05 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 146.05 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 146.05 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "63e0ef6f-4c70-475b-a77a-15289496d1de")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 118.11 45.72 0)
 		(unit 1)
@@ -2676,6 +3589,151 @@
 			(project "Stuttgart"
 				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Stuttgart:MCP1700T-3302E_TT")
+		(at 180.34 43.18 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9c667c6-1d80-40c7-925a-d73b7a1a4834")
+		(property "Reference" "IC3"
+			(at 166.37 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1700T-3302E_TT"
+			(at 166.37 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Stuttgart:SOT95P237X112-3N"
+			(at 156.21 -51.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-4/sf-00090030.pdf"
+			(at 156.21 -151.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "LDO voltage regulator 250mA Isupply 1uA"
+			(at 180.34 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.12"
+			(at 156.21 -351.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "579-MCP1700T3302E/TT"
+			(at 156.21 -451.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1700T-3302E-TT?qs=fM4xO01eazPmCNDrdHEdaw%3D%3D"
+			(at 156.21 -551.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Microchip"
+			(at 156.21 -651.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCP1700T-3302E/TT"
+			(at 156.21 -751.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "69334950-3233-498d-a294-605d60f69ec6")
+		)
+		(pin "3"
+			(uuid "69226850-5ae6-47a7-a572-ca51995ff6dd")
+		)
+		(pin "2"
+			(uuid "ffcaff37-ed03-4cb1-a8fe-34e16cae932a")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "IC3")
 					(unit 1)
 				)
 			)
