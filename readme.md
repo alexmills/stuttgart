@@ -75,7 +75,7 @@ The 5V supply from the USB-C connector is isolated using a Texas Instruments UCC
 
 The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series digital isolators ([Datasheet](https://www.ti.com/lit/ds/symlink/iso7742.pdf)). Both have a SPI throughput of 100Mbps, providing more than enough headroom for the CAN Controller and ADC.
 
-**ISO7742 (2F/2R) - SPI0 - MCP251863
+**ISO7742 (2F/2R) - SPI0 - MCP251863**
 
 | Channel | Signal   |
 | ------- | -------- |
