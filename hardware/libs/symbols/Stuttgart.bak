@@ -2218,7 +2218,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "QFN50P500X500X90-29N-D"
+		(property "Footprint" "Stuttgart:QFN50P500X500X90-29N-D"
 			(at 29.21 -84.76 0)
 			(show_name no)
 			(do_not_autoplace no)

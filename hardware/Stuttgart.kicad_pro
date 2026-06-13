@@ -232,6 +232,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
         }
       ],
       "zones_allow_external_fillets": false
@@ -655,7 +659,7 @@
         "uuid": "6d354744-ce95-4d5c-b7ae-1990dae66f7b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "IC4",
     "variants": []
   },
   "sheets": [

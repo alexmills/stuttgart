@@ -2690,10 +2690,6 @@
 		(uuid "a13fa679-9de0-4ade-bfec-b363e8d2488b")
 	)
 	(no_connect
-		(at 99.06 168.91)
-		(uuid "a18a65da-620f-49e6-8d75-fbf500ce95fd")
-	)
-	(no_connect
 		(at 91.44 133.35)
 		(uuid "accc6cf2-5679-437f-bbae-a1c4527da4bc")
 	)
@@ -3087,6 +3083,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 171.45) (xy 95.25 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e8954d-b5c0-45d8-ac32-09d47fb53160")
+	)
+	(wire
+		(pts
 			(xy 177.8 137.16) (xy 194.31 137.16)
 		)
 		(stroke
@@ -3247,6 +3253,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 168.91) (xy 99.06 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a7c113e-1b08-4f3f-a7a1-f492c4df25a5")
+	)
+	(wire
+		(pts
 			(xy 101.6 93.98) (xy 101.6 102.87)
 		)
 		(stroke
@@ -3294,6 +3310,16 @@
 			(type default)
 		)
 		(uuid "91655bd6-f1c1-4a3a-9107-4bdd333af088")
+	)
+	(wire
+		(pts
+			(xy 109.22 100.33) (xy 109.22 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "918d21e0-e15d-4f9c-a1dd-355db478fb40")
 	)
 	(wire
 		(pts
@@ -3939,7 +3965,7 @@
 			)
 		)
 	)
-	(global_label "ADC_CONV_ISO"
+	(global_label "SPI1_CS_ISO"
 		(shape input)
 		(at 138.43 46.99 180)
 		(fields_autoplaced yes)
@@ -3951,7 +3977,31 @@
 		)
 		(uuid "1f11b36c-6a89-46e8-a4e3-35509ad4081f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.7166 46.99 0)
+			(at 123.5915 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CAN_INT1_ISO"
+		(shape output)
+		(at 95.25 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59b96c2b-54e1-4e56-a6b8-fa5033e1332d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.3833 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4000,6 +4050,30 @@
 		(uuid "73d51799-ca3e-49c1-ac05-62414d88cd1f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 116.84 84.2215 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPI0_CS_ISO"
+		(shape input)
+		(at 109.22 100.33 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3f88061-bf0f-49c6-bc62-4b19d350173c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.22 85.4915 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
