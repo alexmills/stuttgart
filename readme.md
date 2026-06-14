@@ -1,6 +1,6 @@
 # Project Stuttgart
 
-*Last Updated: 8th June 2026*
+*Last Updated: 14th June 2026*
 
 > Named after the founding location of Bosch in 1886, where a team in 1983 started development of the Connected Area Network.
 
@@ -48,10 +48,10 @@ The current state of the project as follows:
 | Voltage ADC            | MCP3202-CI/SN                  | C56997    | ✅      | ✅      |
 | Isolated DC-DC         | TI UCC12040DVER                | C5216535  | ✅      | ✅      |
 | Digital Isolator 1     | TI ISO7741 (3F/1R)             | C913840   | ✅      | ✅      |
-| Digital Isolator 2     | TI ISO7742 (2F/2R)             | C2868557  | ✅      | ✅      |
+| Digital Isolator 2     | TI ISO7763 (3F/3R)             | C2873524  | ✅      | ✅      |
 | 3.3V LDO (CAN Side)    | Microchip MCP1700T-3302E/TT    | C39051    | ✅      | ✅      |
 | 3.3V LDO (MCU Side)    | OnSemi NCV1117ST33T3G          | C114733   | ✅      | ✅      |
-| MCP2518FD Oscillator   | SCTF SX2M20.000B10F20TNN       | C7431315  | ✅      | 📦     |
+| MCP2518FD Crystal      | Murata XRCGE20M000F3A1AR0      | C6758395  | ✅      | 📦     |
 | 12MHz Crystal          | Abracon ABM8-272-T3            | C20625731 | ✅      | ✅      |
 | SMPS Inductor          | Abracon AOTA-B201610S3R3-101-T | C42411119 | ✅      | ✅      |
 | Transceiver TVS Diodes | Littelfuse SMBJ5.0A x2         | C83333    | ✅      | 📦     |
@@ -67,35 +67,37 @@ The current state of the project as follows:
 
 Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
 
-![System Overview](content/stuttgart-system-overview-v1.1.jpg)
+![System Overview](content/stuttgart-system-overview-v1.3.jpg)
 
 ### Vehicle / USB Isolation
 
 The 5V supply from the USB-C connector is isolated using a Texas Instruments UCC12040 DC-DC Module ([Datasheet](https://www.ti.com/lit/ds/symlink/ucc12040.pdf)), providing 3kV protection, low EMI and 500mW of output power.
 
-The SPI and GPIO circuits are isolated using Texas Instruments ISO774X series digital isolators ([Datasheet](https://www.ti.com/lit/ds/symlink/iso7742.pdf)). Both have a SPI throughput of 100Mbps, providing more than enough headroom for the CAN Controller and ADC.
+The SPI and GPIO circuits are isolated using Texas Instruments ISO7763 and ISO7741 digital isolators. Both have a SPI throughput of 100Mbps, providing more than enough headroom for the CAN Controller and ADC.
 
-**ISO7742 (2F/2R) - SPI0 - MCP251863**
+**ISO7763 (3F/4R) - SPI0 - MCP251863**
 
-| Channel | Signal   |
-| ------- | -------- |
-| F1      | SPI0 SCK |
-| F2      | SPI0 TX  |
-| R1      | SPI0 RX  |
-| R2      | INT      |
+| Channel | Signal       |
+| ------- | ------------ |
+| F1      | SPI0 SCK     |
+| F2      | SPI0 TX      |
+| F3      | SPI0 CS      |
+| R1      | SPI0 RX      |
+| R2      | INT          |
+| R3      | INT1 (Spare) |
 
 **ISO7741 (3F/1R) - SPI1 - MCP3202**
 
 | Channel | Signal   |
 | ------- | -------- |
 | F1      | SPI1 SCK |
-| F2      | SP1 TX   |
-| F3      | Spare    |
+| F2      | SPI1 TX  |
+| F3      | SPI1 CS  |
 | R1      | SP1 RX   |
 
 ### Vehicle Interface
 
-The CAN communication to the vehicle is achieved using a Microchip MCP2518FD CAN-FD ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf)) controller paired with the recommended ATA6563 Microchip transceiver ([Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/ATA6562.3-Data-Sheet-20005790E.pdf)). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
+The CAN communication to the vehicle is achieved using a Microchip MCP251863, integrating the MCP2518-FD Controller and ATA6563 Transceiver into a single package ([Datasheet]([https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP251863-External-CAN-FD-Controller-with-Integrated-Transceiver-DS20006624.pdf))). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
 
 ## Bus ADC Measurements
 
