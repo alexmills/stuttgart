@@ -5,6 +5,129 @@
 	(uuid "8a9346be-a8cf-4e40-ad58-4c5edb02958c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2590,6 +2713,12 @@
 		(uuid "bc4a01e0-84c9-4129-b9f2-b6de86171c28")
 	)
 	(junction
+		(at 127 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc9b6ac4-256b-4d15-9705-8835b4bbe18d")
+	)
+	(junction
 		(at 176.53 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2642,6 +2771,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e349ba39-c891-4b9a-a691-8a6668c50895")
+	)
+	(junction
+		(at 187.96 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e977ac1b-013b-4529-8d81-a0a9e4caf02c")
 	)
 	(junction
 		(at 53.34 40.64)
@@ -3281,6 +3416,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 40.64) (xy 191.77 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87e08649-a9b2-49a8-b772-dc194e1caa6b")
+	)
+	(wire
+		(pts
 			(xy 189.23 109.22) (xy 190.5 109.22)
 		)
 		(stroke
@@ -3708,6 +3853,16 @@
 			(type default)
 		)
 		(uuid "e046973f-bc82-4b14-9c29-f8b00c2a6517")
+	)
+	(wire
+		(pts
+			(xy 127 40.64) (xy 130.81 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06466a7-9fda-4641-9d7c-17f0d5e1302b")
 	)
 	(wire
 		(pts
@@ -4772,6 +4927,85 @@
 			(project "Stuttgart"
 				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
 					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 191.77 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "254ba699-6ed1-4feb-8129-231b9288a863")
+		(property "Reference" "TP7"
+			(at 193.548 37.338 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 194.31 38.6079 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 196.85 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 191.77 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27ee9998-50f1-43d8-b7c1-817fd142f75f")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -6466,6 +6700,85 @@
 			(project "Stuttgart"
 				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 130.81 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba66b998-27b9-4a5f-8eea-9c685eb2b1f7")
+		(property "Reference" "TP6"
+			(at 132.588 37.338 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 38.6079 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 135.89 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 130.81 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e58f12a6-ea75-493d-b6e4-7ebe4a2433f7")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1"
+					(reference "TP6")
 					(unit 1)
 				)
 			)

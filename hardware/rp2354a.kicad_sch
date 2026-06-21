@@ -5,6 +5,129 @@
 	(uuid "bf32a9fa-a400-49c9-8120-28668b0f8a45")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2958,6 +3081,12 @@
 		(uuid "a4986c41-bc8d-436d-88cb-c945ed761fb8")
 	)
 	(junction
+		(at 226.06 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5447f17-8aa1-465c-b14f-f8cdbf7ee198")
+	)
+	(junction
 		(at 254 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3331,6 +3460,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 29.21) (xy 231.14 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31227f58-8a07-4701-bc70-d82d123b664d")
+	)
+	(wire
+		(pts
 			(xy 208.28 46.99) (xy 208.28 55.88)
 		)
 		(stroke
@@ -3438,6 +3577,16 @@
 			(type default)
 		)
 		(uuid "4bcb9942-a030-4de3-9c6b-d582617bfbb4")
+	)
+	(wire
+		(pts
+			(xy 200.66 29.21) (xy 204.47 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df7ab09-9d7d-406f-9ee7-8f342e5342a1")
 	)
 	(wire
 		(pts
@@ -7221,6 +7370,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 204.47 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78f83d5b-feda-4f2c-a4ea-ee9a8586d0fa")
+		(property "Reference" "TP1"
+			(at 206.248 25.908 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 207.01 27.1779 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 209.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 204.47 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "654bd909-774f-4ca3-8b3c-2598b8d04ddd")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 120.65 40.64 0)
 		(unit 1)
@@ -8569,6 +8797,85 @@
 			(project "Stuttgart"
 				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fdd12a14-e394-4db5-a274-72e2f130701c")
+		(property "Reference" "TP2"
+			(at 232.918 25.908 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 233.68 27.1779 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 236.22 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07d296ac-90e7-4322-b08a-62a288fd12cb")
+		)
+		(instances
+			(project "Stuttgart"
+				(path "/6d354744-ce95-4d5c-b7ae-1990dae66f7b/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
