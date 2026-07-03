@@ -40,6 +40,44 @@ The current state of the project as follows:
 - [ ] App Implementation
 - [ ] Testing
 
+## Main Components
+
+| Component              | Part No                       | JLC No    | Status | Models |
+| ---------------------- | ----------------------------- | --------- | ------ | ------ |
+| MCU                    | Raspberry Pi RP2354A          | C41378174 | ✅      | 📦     |
+| CAN FD Controller      | Microchip MCP251863           | C20295647 | ✅      | ✅      |
+| Voltage ADC            | MCP3202-CI/SN                 | C56997    | ✅      | ✅      |
+| Isolated DC-DC         | TI UCC33420                   | C46461551 | ✅      | ✅      |
+| Isolated USB           | TI ISOUSB111DWR               | C5216549  | ✅      | ✅      |
+| 3.3V LDO               | OnSemi NCV1117ST33T3G         | C114733   | ✅      | ✅      |
+| MCP2518FD Crystal      | Murata XRCGE20M000F3A1AR0     | C6758395  | ✅      | 📦     |
+| 12MHz Crystal          | Abracon ABM8-272-T3           | C20625731 | ✅      | ✅      |
+| SMPS Inductor          | Abracon AOTA-B201610S3R3-101T | C42411119 | ✅      | ✅      |
+| Transceiver TVS Diodes | Littelfuse SMBJ5.0A           | C83333    | ✅      | 📦     |
+| ADC Zener Diodes       | Onsemi SZMM5Z3V3T1G           | C464127   | ✅      | 📦     |
+| BOOTSEL Button         | Wurth 434133025816            | C5504987  | ✅      | ✅      |
+| USB-C Connector        | GCT USB4105-GF-060            | C3025063  | ✅      | 📦     |
+| SWD Header             | JST SM03B-SRSS-TB             | C160403   | ✅      | ✅      |
+| CANH Socket            | Cliff FCR7350Y (Blue)         | Digikey   | ✅      | ✅      |
+| CANL Socket            | Cliff FCR7350G (Green)        | Digikey   | ✅      | ✅      |
+| GND Socket             | Cliff FCR7350B (Black)        | Digikey   | ✅      | ✅      |
+
+## System Architecture
+
+Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
+
+![System Overview](content/stuttgart-system-overview-v1.4.jpg)
+
+### Vehicle / USB Isolation
+
+The VBUS from the USB-C connector is isolated using a Texas Instruments UCC33420 DC-DC Converter, providing 1.5W / 300mA to the 5V Rail.
+
+The USB data is isolated using a Texas Instruments ISOUSB111 USB Isolator, which sits between the USB-C Connector and RP2354. Combining this IC with the DC-DC converter means the main components on the PCB sit on the "vehicle side", completely isolated from the USB port and connected computer.
+
+### Vehicle Interface
+
+The CAN communication to the vehicle is achieved using a Microchip MCP251863, integrating the MCP2518-FD Controller and ATA6563 Transceiver into a single package ([Datasheet]([https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP251863-External-CAN-FD-Controller-with-Integrated-Transceiver-DS20006624.pdf))). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
+
 ## Power Requirements
 
 ### 3V3 Rail
@@ -109,43 +147,6 @@ For 99% of the time the load is much smaller at around 290mW, requiring 492mW of
 
 With the transceiver in standby mode until needed, our system power requirements at boot are under the 100mA USB initial limit, which can be upped to 400-500mA with negotiations by the RP2354.
 
-## Main Components
-
-| Component              | Part No                       | JLC No    | Status | Models |
-| ---------------------- | ----------------------------- | --------- | ------ | ------ |
-| MCU                    | Raspberry Pi RP2354A          | C41378174 | ✅      | 📦     |
-| CAN FD Controller      | Microchip MCP251863           | C20295647 | ✅      | ✅      |
-| Voltage ADC            | MCP3202-CI/SN                 | C56997    | ✅      | ✅      |
-| Isolated DC-DC         | TI UCC33420                   | C46461551 | ✅      | ✅      |
-| Isolated USB           | TI ISOUSB111DWR               | C5216549  | ✅      | ✅      |
-| 3.3V LDO               | OnSemi NCV1117ST33T3G         | C114733   | ✅      | ✅      |
-| MCP2518FD Crystal      | Murata XRCGE20M000F3A1AR0     | C6758395  | ✅      | 📦     |
-| 12MHz Crystal          | Abracon ABM8-272-T3           | C20625731 | ✅      | ✅      |
-| SMPS Inductor          | Abracon AOTA-B201610S3R3-101T | C42411119 | ✅      | ✅      |
-| Transceiver TVS Diodes | Littelfuse SMBJ5.0A           | C83333    | ✅      | 📦     |
-| ADC Zener Diodes       | Onsemi SZMM5Z3V3T1G           | C464127   | ✅      | 📦     |
-| BOOTSEL Button         | Wurth 434133025816            | C5504987  | ✅      | ✅      |
-| USB-C Connector        | GCT USB4105-GF-060            | C3025063  | ✅      | 📦     |
-| SWD Header             | JST SM03B-SRSS-TB             | C160403   | ✅      | ✅      |
-| CANH Socket            | Cliff FCR7350Y (Blue)         | Digikey   | ✅      | ✅      |
-| CANL Socket            | Cliff FCR7350G (Green)        | Digikey   | ✅      | ✅      |
-| GND Socket             | Cliff FCR7350B (Black)        | Digikey   | ✅      | ✅      |
-
-## System Architecture
-
-Below is the high level architecture of the system, including the USB/Vehicle isolation and main active components.
-
-![System Overview](content/stuttgart-system-overview-v1.4.jpg)
-
-### Vehicle / USB Isolation
-
-The VBUS from the USB-C connector is isolated using a Texas Instruments UCC33420 DC-DC Converter, providing 1.5W / 300mA to the 5V Rail.
-
-The USB data is isolated using a Texas Instruments ISOUSB111 USB Isolator, which sits between the USB-C Connector and RP2354. Combining this IC with the DC-DC converter means the main components on the PCB sit on the "vehicle side", completely isolated from the USB port and connected computer.
-
-### Vehicle Interface
-
-The CAN communication to the vehicle is achieved using a Microchip MCP251863, integrating the MCP2518-FD Controller and ATA6563 Transceiver into a single package ([Datasheet]([https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP251863-External-CAN-FD-Controller-with-Integrated-Transceiver-DS20006624.pdf))). The CAN Signals and vehicle reference ground are provided through CLIFF 4mm 1kV "banana" sockets usually found on multimeters, so my normal test leads and accessories can be used.
 ## Bus ADC Measurements
 
 The voltage divider for each bus is `R1 = 10kΩ` and `R2 = 47kΩ` so the ratio is calculated as:
@@ -168,5 +169,4 @@ Below are the estimated values for the ADC measurements at various bus voltages 
 | **3.9**     | **3.223**   | **4000**      | **Clean bus fault threshold** |
 | 4.0         | 3.300       | 4095          | Zener Activates               |
 | Over 4.0    | 3.300       | 4095          | Clamped - Fault Condition     |
-
 
