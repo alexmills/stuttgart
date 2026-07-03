@@ -2452,7 +2452,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SOIC127P1030X265-16N"
+		(property "Footprint" "Stuttgart:SOIC127P1030X265-16N"
 			(at 29.21 -94.92 0)
 			(show_name no)
 			(do_not_autoplace no)
