@@ -51,6 +51,7 @@ The current state of the project as follows:
 | ATA6563   | 0.25mA   | 0.5mA    | VIO 3V3 Logic Pin |
 | MCP3202   | 0.4mA    | 0.55mA   | VSS = 5.0V        |
 | **TOTAL** | **32mA** | **41mA** |                   |
+
 The RP2354 draws around 16mA with constant data being written to the USB port as per the hardware data sheet. 
 
 ### LDO Thermal
@@ -72,6 +73,7 @@ At maximum load of 41mA the LDO dissipates 70mW as heat, causing a junction rise
 | Passive (recessive)  | ~2-5mA     | ~12-15mA  | **~14-20mA**    |
 | TX Burst (max dom)   | 70mA       | ~15mA     | **~85mA**       |
 | **CANL/H Short**     | **85mA**   | **~15mA** | **~100mA**      |
+
 ### Total 5V DC-DC Load
 
 3V3 rail load reflected through the LDO at ~1:1
@@ -104,6 +106,7 @@ For 99% of the time the load is much smaller at around 290mW, requiring 492mW of
 | Passive Monitor (max) | 98mA / 492mW   | ~12-15mA  | ~113mA     |
 | TX Burst (max dom)    | 213mA / 1068mW | 15mA      | ~228mA     |
 | Short Fault (max)     | 240mA / 1195W  | 15mA      | ~256mA     |
+
 With the transceiver in standby mode until needed, our system power requirements at boot are under the 100mA USB initial limit, which can be upped to 400-500mA with negotiations by the RP2354.
 
 ## Main Components
