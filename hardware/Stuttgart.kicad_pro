@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -145,7 +145,7 @@
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -200,7 +200,8 @@
         0.2,
         0.3,
         0.4,
-        0.6
+        0.6,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -659,7 +660,7 @@
         "uuid": "6d354744-ce95-4d5c-b7ae-1990dae66f7b"
       }
     ],
-    "used_designators": "U2,#PWR7,#PWR9-16,#PWR30-40,#PWR53-61,C11-12,C35-39,FB1,R12,IC1,IC3",
+    "used_designators": "#PWR2,#PWR10-11,#PWR61-63,IC4",
     "variants": []
   },
   "sheets": [
