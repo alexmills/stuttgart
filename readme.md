@@ -1,6 +1,6 @@
 # Project Stuttgart
 
-*Last Updated: 3rd July 2026*
+*Last Updated: 11th July 2026*
 
 > Named after the founding location of Bosch in 1886, where a team in 1983 started development of the Connected Area Network.
 
@@ -33,14 +33,16 @@ The current state of the project as follows:
 - [x] Project Scope
 - [x] Architecture & Protocol Design
 - [x] Component Selection
-- [ ] Schematic Design (Active)
-- [ ] PCB Design
-- [ ] Enclosure Design
-- [ ] Firmware Implementation
-- [ ] App Implementation
+- [x] Schematic Design
+- [x] PCB Design
+- [ ] Enclosure Design (Active)
+- [ ] Firmware Implementation (Active)
+- [ ] App Implementation (Active)
 - [ ] Testing
 
 ## Main Components
+
+![Rev-0 3D Render](content/stuttgart-render-v1.4-rev-0.jpg)
 
 | Component              | Part No                       | JLC No    | Status | Models |
 | ---------------------- | ----------------------------- | --------- | ------ | ------ |
