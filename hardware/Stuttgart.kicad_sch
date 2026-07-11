@@ -482,7 +482,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "304bef4f-add0-487c-b718-54fa10a4bc8f")
-		(property "Sheetname" "USB Power"
+		(property "Sheetname" "USB Isolation"
 			(at 82.55 34.8484 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -493,7 +493,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb-power.kicad_sch"
+		(property "Sheetfile" "usb-isolation.kicad_sch"
 			(at 82.55 60.2746 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -596,7 +596,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1")
-		(property "Sheetname" "Isolation"
+		(property "Sheetname" "Power"
 			(at 199.39 34.8484 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -607,7 +607,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "isolation.kicad_sch"
+		(property "Sheetfile" "power.kicad_sch"
 			(at 199.39 61.5446 0)
 			(show_name no)
 			(do_not_autoplace no)
