@@ -5,7 +5,10 @@
 > Named after the founding location of Bosch in 1886, where a team in 1983 started development of the Connected Area Network.
 
 The goal for this research project is to explore the benefits of having a clearer look at the CAN bus during vehicle diagnostics, instead of relying solely on multimeter or oscilloscope measurements.
+
 ## Overview
+
+![Rev-0 3D Render](content/stuttgart-render-v1.4-rev-0.png)
 
 The tool connects to the CAN bus in a **read only** capacity, receiving messages and monitoring bus health while simultaneously measuring the voltage on the High and Low signal lines to identify physical layer faults. The CAN controller's transmit line is still connected for some future experiments with J1939.
 
@@ -40,9 +43,12 @@ The current state of the project as follows:
 - [ ] App Implementation (Active)
 - [ ] Testing
 
-## Main Components
+## Updates 
 
-![Rev-0 3D Render](content/stuttgart-render-v1.4-rev-0.jpg)
+### 11th July 2026
+Order with JLC has been placed! Got stung with extended library part swaps so will need to revise that in the future because it was quite expensive.
+
+## Main Components
 
 | Component              | Part No                       | JLC No    | Status | Models |
 | ---------------------- | ----------------------------- | --------- | ------ | ------ |
