@@ -5454,7 +5454,7 @@
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP5"
-			(at -1.735 0.905 0)
+			(at -1.85 1.245 0)
 			(layer "F.SilkS")
 			(uuid "10aafc4f-d676-4793-baa6-7c1ce3efa9ed")
 			(effects
@@ -17664,7 +17664,7 @@
 	)
 	(gr_line
 		(start 89.3 94.55)
-		(end 89.325 107.175)
+		(end 89.325 106.7)
 		(stroke
 			(width 0.1)
 			(type dot)
@@ -17751,6 +17751,30 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "04df047b-a3c0-4bfd-9d87-87b9e6e2074e")
+	)
+	(gr_text "Designed in Australia"
+		(at 103.25 59.775 0)
+		(layer "F.SilkS")
+		(uuid "c7b875c5-2fd2-49f7-91ba-49224a38eba9")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "Project Stuttgart\n\nV1.4 Rev 0 - 11/7/26\n\ngithub.com/alexmills/stuttgart"
+		(at 103.525 97.35 0)
+		(layer "F.SilkS")
+		(uuid "6f1c5ed5-ab34-4535-b83b-4db46b27a8fe")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify left top)
+		)
 	)
 	(gr_text "3V3"
 		(at 104.725 84.525 0)
@@ -17882,6 +17906,18 @@
 				(size 0.8 0.8)
 				(thickness 0.15)
 			)
+		)
+	)
+	(gr_text "USB-C to CAN-FD"
+		(at 103.2 58.125 0)
+		(layer "F.SilkS" knockout)
+		(uuid "e1b638df-db81-425a-8f9e-1ed4e317a1c0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.1875)
+			)
+			(justify left)
 		)
 	)
 	(segment
