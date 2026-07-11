@@ -244,6 +244,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a4e6dae-b615-4816-b705-a5b4bc0bdfa2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "328dc104-1f7b-4b80-9342-9a256b4b1982")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5aab2e0-bec6-43fa-b6fb-366a1eeb9d65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "454ab355-6128-4e8b-ae2e-f9580c3b8b9d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9314dd68-5ede-411e-8588-6bd500d73cbb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/90d3fecd-6c1b-4cd7-a0c9-6195b85943e9")
 		(sheetname "/Vehicle Interface/")
 		(sheetfile "vehicle_interface.kicad_sch")
@@ -253,7 +318,7 @@
 				(pins "1" "2" "3" "4" "5")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.5 6)
@@ -730,6 +795,45 @@
 				)
 			)
 		)
+		(property "JLC Part Number" "C6758395"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b3de3d4-ab40-45ad-9950-8dfb0bc46fec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8c2ca45-389c-4609-bacd-fdc9e299000e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc71592c-7948-48f9-82a7-4edfe720abf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Crystal*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/0c5e579e-1834-4a4c-8a26-624134e1dcdc")
 		(sheetname "/Vehicle Interface/")
@@ -913,6 +1017,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3eb11e1e-8d82-4959-8f1c-50d63578331d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "896f9f28-bba1-4f8e-94d0-3012ba4d8870")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a190f877-13b1-4c1b-9b5d-7e3e412cb001")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d74eba35-895e-400a-b703-0e5bb2c5a524")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0371270-82a9-4ee3-b8de-ed05e4605d47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/2ca1fed7-84c9-4f13-8b01-fb1ec0e221ae")
 		(sheetname "/RP2354A/")
@@ -1066,6 +1235,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "695b443c-fda0-4277-aeeb-73bffe4bb1f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98fa6779-ddb9-47a2-970d-808e9fd8379b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "273e19cb-f6a4-4264-8ed6-62065d6d7f7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a20e231-c988-4c26-a169-4c75e3fdd70b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d709d718-1262-40ef-a44b-1709c1c82103")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "287ce704-92eb-4d04-8eb0-86cd1069a989")
 			(effects
 				(font
 					(size 1 1)
@@ -1233,6 +1467,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b17e1fc6-a36e-4a7a-9b13-94df9597dbf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5df60ffe-97ee-436e-a71f-74f82505a2de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83c259cb-5252-4ac3-ab9e-968c160380eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69f076fa-205b-48b1-8fa5-cec9987a0686")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bb2d5d6-e8b6-434e-95c9-6b7cd412d500")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/0113c870-b250-4309-8cb3-10f2f0b1defe")
 		(sheetname "/Vehicle Interface/")
@@ -1386,6 +1685,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cf912a98-cc21-4566-bf17-fcf2bd3d4b83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a59e3c7-c846-471b-b0be-5d65cdeb16e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8c0f8b8-79d7-431e-908b-d8327c323af2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "268c49ec-c592-4892-b293-a6e852c075fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f32d1aa-7064-432c-a5ce-b48f8b5912a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9377bad8-898e-4d24-b605-fc03c81f5eb9")
 			(effects
 				(font
 					(size 1 1)
@@ -1553,6 +1917,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3d630bb-095f-4817-bd29-762e3a16083b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7814899f-22b0-493b-bf34-e7e1d49a2d61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab12afde-7c9f-4d61-874c-de28ab89b330")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f4ee046-6ad2-457b-8b60-957bef333811")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc6080cd-eace-4e0b-86f4-3664917f23e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/c02d3f67-3146-4beb-be4f-2d36bfb5664d")
 		(sheetname "/RP2354A/")
@@ -1713,6 +2142,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3603d1cf-bfe5-41a3-9dc0-154272236e68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66ef30d3-2f78-4646-bdb3-7d23abd0b4bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21d06f32-edd3-4822-8d73-206c9f431947")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ce40106-a1f8-4ee2-8c8c-11b6000385d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a23c4f5-2d65-448e-926a-9719e39dc2f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1/452bcfb2-13b5-49fe-b4c4-8f7c4989a5fa")
 		(sheetname "/Power/")
@@ -1864,6 +2358,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3cceacb5-c6fb-476e-9cee-1185547f5d89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4812cd72-1fc8-464d-baa0-97b9cddd21f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a1a57bd-3c7c-4dce-ab28-3d41e7c05370")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3baab3a4-9573-4c4d-a643-15e355b12d58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bf44cc7-c7bd-47db-a721-5a9692086b3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/fdd12a14-e394-4db5-a274-72e2f130701c")
 		(sheetname "/RP2354A/")
@@ -1874,6 +2433,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1968,6 +2528,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb467588-c63a-42f8-baa2-efd6e3d560dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8b0ade4-491e-4739-b393-67d9763115e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e839632a-9439-444a-983d-3a3ce05ed23b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cae2748-d261-4d5d-9ba1-2e1c70d54911")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c1ce962-12b4-46ae-8957-3f562dc463b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2157,6 +2782,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C83333"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccf35926-b0c6-4db9-afac-06f7bec6fb83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ea4ed10-7928-4822-921f-29af0a5836ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "816f4c87-24d1-459d-893d-5281754a5846")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d257a12-e958-4ec7-93fd-92145afba533")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd7ecfa9-bed8-452a-81c6-be0f822de117")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2451,6 +3141,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f1d486a-d06a-49a6-bf53-279e8708a345")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "109389a6-76ea-4e32-a35a-28ee1b27285c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b8c4d86-82a6-44db-b59f-44c624927a8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69960278-9657-4cb1-8790-bbaa714989ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b93a4a6a-d88a-4948-9150-73dfca348d45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/86153048-5ec5-479e-b92f-8e93572874d0")
 		(sheetname "/RP2354A/")
@@ -2604,6 +3359,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "01ead2fb-c6cc-46b3-a588-2655d10be489")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73f76726-b404-4d7c-afbf-28d802f712cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76beb3e1-31c6-40fc-af40-dfc19a434a5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "477394a3-56df-48a7-9e07-9d427830cd53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80f45319-eb11-474e-be2f-e016d3b8e14a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ed2b08c-fbf1-4560-8e79-6cc2eadae579")
 			(effects
 				(font
 					(size 1 1)
@@ -2771,6 +3591,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c4e9669-de27-43cd-8f9b-d81b144ec984")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d13ca919-e17f-40fc-a3e8-085b2f80f22a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acd5dae8-8179-492e-a17d-63fabe97b781")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f1614e1-aead-4411-b824-a64dc9ad38e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f80c7358-9625-4779-9ea0-c9b3c855bca0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/ad8eee93-a5ac-41fe-b6cf-b15bf6fcbf3c")
 		(sheetname "/Vehicle Interface/")
@@ -2924,6 +3809,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7cb41f21-192f-4b2d-b650-8b3565250512")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8ab9f85-2454-42d5-a9ba-e75f9918c124")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16bff67e-bc87-426f-be36-909d60b0bd61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc63aaa6-d794-40f9-97bc-8efa274c67fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae171546-ca29-4fa0-bf39-35608d4f8869")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1adad0cd-0462-4008-9a54-f94f5bebbc9f")
 			(effects
 				(font
 					(size 1 1)
@@ -3091,6 +4041,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69287d6e-94ee-4099-8a30-2ba397593da7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6a7d41d-4fd7-4051-bd2f-528ef6924981")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "934f4290-9541-463e-89b4-2f80f855c719")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe607a2b-753d-468b-a67c-72f258cec647")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff34f976-e98c-4164-9b09-161ce425dd6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/eb72579c-bdda-4c91-b444-cff19ddf9581")
 		(sheetname "/Vehicle Interface/")
@@ -3239,6 +4254,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C464127"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbadcf2c-a87a-4e08-881b-bcf0bc9baf12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ff26e74-2909-4828-9ff0-126e89adcc5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff9dee76-1a3b-45a7-85b1-8fc5016b10f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6f067e5-4670-4e8c-84ea-dc701516d303")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fd3087c-d55c-4b7d-8d11-836ed5b805b0")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3521,6 +4601,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C97502"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61b87152-f897-41b6-b92f-328be70a00a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "957c67fe-3588-4be2-832c-b5c93ba52d14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "467fc3e2-dd3d-4ba0-8cb9-6becbc8d241f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89e44ffd-8fdd-44ca-bc1d-ebf37f845478")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6d736bb-b601-4e2a-abf2-754e81ed13df")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3850,6 +4995,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" "C20625731"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9bb45f9-ec55-4cb6-a08e-2fd1d68e8b90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d89cc45d-b022-42cc-9023-93826a80bf0f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a599c20-6903-484f-b375-6d14acb958a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "309e5bf0-bb13-40b0-af36-8fdc59cef46e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e1fef99-2fd5-4e58-9404-47a83bab12f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/17c733c4-ac19-48c0-89ba-7236b7c2aca6")
 		(sheetname "/RP2354A/")
 		(sheetfile "rp2354a.kicad_sch")
@@ -4131,6 +5341,45 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d0873656-9673-44a2-9ddd-de0a3e712617")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C41378174"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e04f4f26-2cd5-471e-bb32-fd96132b041d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "687c92c5-41f9-4fd1-b9e8-1ecfe2920863")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69dbd901-bb1f-4648-b46e-f7c4bbddabe6")
 			(effects
 				(font
 					(size 1 1)
@@ -4550,7 +5799,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO0-Pad2)")
 			(pinfunction "GPIO0_2")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "0d469bd2-71a1-4f19-b5e5-b8e6341e1918")
 		)
 		(pad "3" smd roundrect
@@ -4560,7 +5809,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO1-Pad3)")
 			(pinfunction "GPIO1_3")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "4d2c0b7c-6765-4dc4-aa90-c39c04028c9a")
 		)
 		(pad "4" smd roundrect
@@ -4570,7 +5819,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO2-Pad4)")
 			(pinfunction "GPIO2_4")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "0de87a01-31aa-48b1-b99f-3737d5e5fabc")
 		)
 		(pad "5" smd roundrect
@@ -4580,7 +5829,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO3-Pad5)")
 			(pinfunction "GPIO3_5")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "4ab10bdb-ccb4-45d4-a1b0-2f42cc70b1cc")
 		)
 		(pad "6" smd roundrect
@@ -4600,7 +5849,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO4-Pad7)")
 			(pinfunction "GPIO4_7")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "e24722cd-322c-434a-b051-654711b9d686")
 		)
 		(pad "8" smd roundrect
@@ -4610,7 +5859,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO5-Pad8)")
 			(pinfunction "GPIO5_8")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "a5d1848f-0694-4f45-b330-1abee3cc6032")
 		)
 		(pad "9" smd roundrect
@@ -4620,7 +5869,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO6-Pad9)")
 			(pinfunction "GPIO6_9")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "7d5e67a0-2fc4-4d3f-bd03-5a422848454d")
 		)
 		(pad "10" smd roundrect
@@ -4630,7 +5879,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO7-Pad10)")
 			(pinfunction "GPIO7_10")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "ec7a162d-f527-4b52-8159-ca1683b3807b")
 		)
 		(pad "11" smd roundrect
@@ -4650,7 +5899,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO8-Pad12)")
 			(pinfunction "GPIO8_12")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "8e3ed105-fc91-42f6-949d-f5236279e085")
 		)
 		(pad "13" smd roundrect
@@ -4660,7 +5909,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO9-Pad13)")
 			(pinfunction "GPIO9_13")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "54913fc2-d847-4583-b8bb-7404937ed85e")
 		)
 		(pad "14" smd roundrect
@@ -4670,7 +5919,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO10-Pad14)")
 			(pinfunction "GPIO10_14")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "5c36ee2b-4ba1-434b-96e0-52030edc4f65")
 		)
 		(pad "15" smd roundrect
@@ -4680,7 +5929,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO11-Pad15)")
 			(pinfunction "GPIO11_15")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "aa061c35-6e58-4c64-83cb-55bb04677896")
 		)
 		(pad "16" smd roundrect
@@ -4690,7 +5939,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO12-Pad16)")
 			(pinfunction "GPIO12_16")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "69963c36-b36e-4bc6-a2b2-fa394ec67375")
 		)
 		(pad "17" smd roundrect
@@ -4700,7 +5949,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO13-Pad17)")
 			(pinfunction "GPIO13_17")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "62c44b27-bc16-442e-99c7-6afeaa0974be")
 		)
 		(pad "18" smd roundrect
@@ -4710,7 +5959,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO14-Pad18)")
 			(pinfunction "GPIO14_18")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "47bb1a8d-538b-409c-8c2f-42ce39ae677c")
 		)
 		(pad "19" smd roundrect
@@ -4720,7 +5969,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO15-Pad19)")
 			(pinfunction "GPIO15_19")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "4f103682-e901-4c7b-82fb-0522e584af05")
 		)
 		(pad "20" smd roundrect
@@ -4800,7 +6049,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO16-Pad27)")
 			(pinfunction "GPIO16_27")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "538938c5-0365-44ae-b973-2cc010ec6416")
 		)
 		(pad "28" smd roundrect
@@ -4810,7 +6059,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO17-Pad28)")
 			(pinfunction "GPIO17_28")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "27bbd9f1-9d91-4566-831a-078092b601de")
 		)
 		(pad "29" smd roundrect
@@ -4820,7 +6069,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO18-Pad29)")
 			(pinfunction "GPIO18_29")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "2f85e83a-fbc4-4876-bfe2-14df34e9194d")
 		)
 		(pad "30" smd roundrect
@@ -4900,7 +6149,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-GPIO25-Pad37)")
 			(pinfunction "GPIO25_37")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "458ea1ed-5e53-454d-b204-6b394a48d42d")
 		)
 		(pad "38" smd roundrect
@@ -5080,7 +6329,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-QSPI_SD3-Pad55)")
 			(pinfunction "QSPI_SD3_55")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "5e1d4550-c4ce-4a90-96dc-cae5d77d18b6")
 		)
 		(pad "56" smd roundrect
@@ -5090,7 +6339,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-QSPI_SCLK-Pad56)")
 			(pinfunction "QSPI_SCLK_56")
-			(pintype "output")
+			(pintype "output+no_connect")
 			(uuid "91404182-1487-4b19-9550-19206294ffbb")
 		)
 		(pad "57" smd roundrect
@@ -5100,7 +6349,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-QSPI_SD0-Pad57)")
 			(pinfunction "QSPI_SD0_57")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "86c53d45-2348-4bc0-af0c-6e019899aa82")
 		)
 		(pad "58" smd roundrect
@@ -5110,7 +6359,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-QSPI_SD2-Pad58)")
 			(pinfunction "QSPI_SD2_58")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "916a471f-ffd5-435b-b05c-9593c8525bee")
 		)
 		(pad "59" smd roundrect
@@ -5120,7 +6369,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-QSPI_SD1-Pad59)")
 			(pinfunction "QSPI_SD1_59")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "21dc94ee-e3a8-4221-9f73-5c9a9567ab41")
 		)
 		(pad "60" smd roundrect
@@ -5225,6 +6474,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7ee26a33-07ec-4b31-8011-bb379ccf79bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a3c82f2-c6db-40b5-b242-1029008ffb00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "384db9d6-499b-4240-b788-0ed9e91dd298")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "928fba6f-57ad-49a6-85ad-b6662cc5eb95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a316fafc-4e8c-4d4a-856f-4fbc7112ba68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94fd7259-c259-451c-a333-96c999892fc2")
 			(effects
 				(font
 					(size 1 1)
@@ -5344,6 +6658,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9289b70f-e40e-4ec7-a4b6-01dfcc7f1454")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c44adc1a-065b-416a-b2fe-6e314f691b34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ab5e484-79b6-4204-979d-de1908e41513")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8aa31bb5-0d39-416b-9199-b866a2252e36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a87b6506-07fd-4d13-bcf2-439e98d991d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "805cff36-85f4-4776-8b15-1f92d2a528b1")
 			(effects
 				(font
 					(size 1 1)
@@ -5502,6 +6881,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "799b069d-c16e-420c-96c0-6f1ce17fe60e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28c0189e-3405-4788-bbf1-a2be1d03b9c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff0dc42b-9ce2-4423-b608-75a827adc540")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2969078-8fdb-499a-9fc6-6ae4221d3059")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "590f10be-b08b-4b00-8b8f-fcdfe4062055")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/e28dc9b6-76dc-412b-b7a2-c20c9805471b")
 		(sheetname "/Vehicle Interface/")
@@ -5512,6 +6956,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -5684,6 +7129,71 @@
 			(effects
 				(font
 					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C5504987"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "557e9a65-73ad-428d-a76b-3cc3245df0a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "422fe2c9-1634-4186-8859-708c3b42fae8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34a3e452-82e3-4ec1-8b99-e71702919675")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e36e4e14-2d41-43f3-a8ea-399e388e1c4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee59c1a0-956c-45c3-861b-6fb0b016cfc3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5996,6 +7506,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47ce3d19-ebd2-4129-8dd6-2b5a59c42fe0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4ff42f1-0c8a-46a0-b6d2-fd618628ef98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44dc721c-6483-4f7f-aa93-519674c4976f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f47e986d-d849-4bcb-861f-fcc27bfddb8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e83359d8-fa66-46f1-ba82-c8b8ff4d4951")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Fiducial*")
 		(path "/808727c6-8db6-49f2-ab0c-b7e476a8e204")
 		(sheetname "/")
@@ -6108,6 +7683,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ca866896-a13e-4621-9efc-0b76c915f313")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c148550a-062f-499e-9bef-bbe02abb06a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d2211aa-0bce-40c4-8df9-a9674c02d7be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aea34e36-b852-419b-81d2-789dafe9ed35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "655c95c9-2ca0-429c-94ff-50c3a3fdc553")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7efa623f-ea3e-4e55-929b-12d67460793e")
 			(effects
 				(font
 					(size 1 1)
@@ -6275,6 +7915,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fb90fdf-e5a1-4a6d-87fb-e3b1d1f9e326")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80aa2395-3fc9-4747-9451-80d2595d91c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a0f94ac-2f59-4184-8e05-05be6befa0b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc6e1f4d-0320-4178-9227-4bd1918568da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3e7bb5e-a237-46cd-b0ec-fd30c633f2d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/1fb874e7-9698-417f-994d-e7fa59ed4b5a")
 		(sheetname "/RP2354A/")
@@ -6435,6 +8140,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "919fee9b-5c6a-4ee9-832a-c5bc0dbea464")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62b74711-d440-4049-82e2-00a1ac6d9c08")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0016ec67-a2df-46a0-b832-dcd389090d10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f0291e3-4fee-4526-b27a-51c6e263cf4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5dbc67b-52cc-4e2c-92bb-42e144ab3010")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/aa607fa4-52e1-424e-87a1-2d6cedb329af")
 		(sheetname "/Vehicle Interface/")
@@ -6586,6 +8356,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc5b0199-8224-4291-9422-386f19886f79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad7e9ec7-5df0-42ed-9c48-b68df048b48b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed5ce291-1529-4186-9c7d-db64935d1b21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d7a8009-eba9-43bc-9b95-c44f44e8fd37")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03bc57db-22f7-4471-a979-d769fa6bce23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/c6666e9d-2ace-4926-9d49-85e4dd50368e")
 		(sheetname "/Vehicle Interface/")
@@ -6596,6 +8431,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -6698,6 +8534,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "378705cd-e9b2-4d39-9b15-806006256f71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5bf1ea0-923d-46e8-9842-d39ec859ff5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0f20ad7-65b8-4343-aae5-ecedb115a497")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6264fd9-14f6-44a4-a67d-9716aa9ce24a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb62bc5e-9fc7-4066-87f2-25ffddc775b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ce797a5-01f3-486f-9170-5d441324d4d2")
 			(effects
 				(font
 					(size 1 1)
@@ -6919,6 +8820,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67f7c003-e8d8-48b2-bd54-bbf3d76cdd5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e668dbdc-a3f1-4105-a442-c8b57868051e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbbd91c9-8c6d-4ffa-a857-735e4392e56f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91f5477f-d2f5-43c2-bb36-310f920767cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6809b35a-b1c5-4233-9bc2-35a06f7f2e01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/2dbdd10a-91a8-432e-88d6-45d17c5d83e7")
 		(sheetname "/Vehicle Interface/")
 		(sheetfile "vehicle_interface.kicad_sch")
@@ -6928,7 +8894,7 @@
 				(pins "1" "2" "3" "4" "5")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.5 6)
@@ -7460,6 +9426,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" "C56997"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37b3c9d9-de8d-45d6-9cf4-313676725ebb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bdc4adb-da20-4655-b4b5-4af754127a48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2de1eda-8c73-4cf5-9f80-b319e393e221")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52d34f56-5a8a-45f4-9226-3a0d91358625")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6be432e-87ce-4db7-ac69-08298ba2987b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/2a24eea0-4989-4342-833f-72789b821b86")
 		(sheetname "/Vehicle Interface/")
 		(sheetfile "vehicle_interface.kicad_sch")
@@ -7828,6 +9859,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "81cdf4ba-5f12-4fbc-9517-68b45ddfc8bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C20295647"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "561b3f52-57b6-449f-a4f4-d0129ccff606")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54f15d46-f2e7-42a8-a071-422bece71100")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06aa3d32-5e65-4cf7-bc8b-5172422e8d7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93bed20e-9369-44b8-8a3f-d8fbe65345f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef3f9f04-90c3-4ce9-9efa-ee513b3f61e7")
 			(effects
 				(font
 					(size 1 1)
@@ -8309,6 +10405,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "000381ee-3e34-4d6d-a8f1-23b4acfa7eb8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01019c6a-a240-4a71-be79-3306367ebe7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6b2fedd-50ab-4558-8851-20a133b6fb22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7785ffcb-149b-4191-a08e-97c7763b0de5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94d1f57c-be04-439c-a303-0c1e7bb3741b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/757bf061-5bf6-4463-940b-d1b6d0e0d76c")
 		(sheetname "/Vehicle Interface/")
@@ -8462,6 +10623,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0f1d79aa-3f96-4862-85d9-17c779c3623e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07898038-efe1-451a-a9bf-006cc9f8de0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c08497a-409e-49ca-9125-4c8ae3c1e3a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef837f57-ad94-46dc-b62e-bd47305c538b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35a81207-b53f-4ec7-ad97-e195cf04b0d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3bddcd7f-096e-4921-bd1b-10ca83823672")
 			(effects
 				(font
 					(size 1 1)
@@ -8629,6 +10855,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6df1cca6-05df-4588-8612-04e3cdf7d812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "993e23f2-222e-43ec-8658-30114620c39a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f79acfb-0cf3-4349-a0e9-bf3a0980e13f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd18595a-327f-4f13-a7b5-bc8ea02d3014")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "132f9651-d8fc-47ab-97f1-69b0bd8a6691")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/77157344-d1ce-4c94-b8ad-667a651c20a0")
 		(sheetname "/RP2354A/")
@@ -8782,6 +11073,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "251e38f3-1c65-4e32-adb6-ce5a45c04bf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d565b8d0-93fb-40b4-a29a-2b133eca9304")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2e88a5f-d9f7-4365-b5a1-6375986f118c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f7a0497-6407-4bf5-a544-a287e215ad7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6923bd71-e9f4-48de-bcbb-823fccb3dce0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36048fac-242c-48ba-8d6c-b4fa30faa2bd")
 			(effects
 				(font
 					(size 1 1)
@@ -8949,6 +11305,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e0ed415-4f58-4b68-91a7-a06df60192b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e58a884-abe6-4d42-8cf0-5bf3eb9a3287")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2fcf1710-e6c5-4961-8126-c4310b2d43d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d3912a5-e4eb-4a83-b444-89c403396df9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b279bca2-ec82-4e75-998d-0054483fb82e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/304bef4f-add0-487c-b718-54fa10a4bc8f/26a7b27a-4b20-4a2d-8680-c92a05d751a4")
 		(sheetname "/USB Isolation/")
@@ -9102,6 +11523,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d21abeef-4994-47e6-b17d-f6a8e195a4d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "daadd34d-92cb-4f19-a7af-516dc50a1eb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d498eee-c7e3-4de2-bfa2-518b6c3a1bab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ee3b6b9-ba7b-4e52-9dc3-dba732fa655d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07c74610-28d4-4ada-94a4-9d6ae089bbb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0158f13f-700d-4dd2-8e4d-b0b244f432fc")
 			(effects
 				(font
 					(size 1 1)
@@ -9269,6 +11755,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eafba36d-f086-406e-858e-5f40132b3966")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87ca95ac-28ba-4897-8ad4-107beed696ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37ec2819-9c49-445a-8bf1-026404f19ba6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7de6735-a758-478e-aa8f-dc23b1eb9061")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc6c369f-b08b-4e1c-b00e-6c5fd07ff4e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/08f9c29d-c6db-44ca-8d4a-9c528a44eda2")
 		(sheetname "/RP2354A/")
@@ -9422,6 +11973,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a85cdf51-c81e-455d-8916-86809c679ea9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C82155"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "268c97a2-2950-4456-91f0-87fd66b3e8d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f763e8d2-e68e-4916-a5c6-89649ff9c1bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6c57f77-600d-44ff-bf2b-4255b1e76561")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eeec0787-7a0b-416b-be86-983e61c7feaa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a82330db-f17b-44f2-8341-c106406ee423")
 			(effects
 				(font
 					(size 1 1)
@@ -9636,6 +12252,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8d4493fc-be7c-4c8a-9065-c47fd0f4f85c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C114733"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d70887b4-51e3-45f4-a52f-7790f6a71367")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "318b62a7-5127-45ed-a6f0-f94c63755fc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4c446e2-6347-4736-bfca-3399dfa42621")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03e15db0-3ca8-4a5c-8245-4507927d5ee0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6f32af7-f2d9-4c2a-b0dc-82a4c8d74251")
 			(effects
 				(font
 					(size 1 1)
@@ -9929,6 +12610,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23d2a3a6-7997-4e5e-b761-61dd99a37b7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b499711-04fe-493d-9fa6-b6db45602b87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fca9025f-b145-4ecb-80de-b0a188855378")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eccc9461-235c-4ce3-9e69-5c64647aa06e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c08661c-e396-4c82-82a3-e4b581be24bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Fiducial*")
 		(path "/d7e0a411-fd8f-461f-a0be-89df2f345c5e")
 		(sheetname "/")
@@ -10039,6 +12785,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57660cc8-05ba-4da2-a194-7f15ae16a59f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6694e554-215a-48f6-9c1a-f27d86c1cdf9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c144ec2-bd4b-4fc7-a264-e6a37ae54fcc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c681ac9c-4c66-468e-a391-15f3eed17755")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8da5885-f36e-46bd-b71c-a71d40d0575d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/78f83d5b-feda-4f2c-a4ea-ee9a8586d0fa")
 		(sheetname "/RP2354A/")
@@ -10049,6 +12860,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -10151,6 +12963,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fd557256-7335-4a1d-8a86-fc9f86aa1204")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e70d45c4-485d-4be9-ab24-2aa5683d8152")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9b8e899-b449-48f8-8a80-8fd83145e531")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b53c176-5eb7-4be4-8b5b-03ebaa9c3780")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a122eaa-4c47-4a2c-a287-aba2e13bc73f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b20eb20b-04f5-4033-badc-a86c29a260e4")
 			(effects
 				(font
 					(size 1 1)
@@ -10318,6 +13195,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c37c288-79bb-4864-b1e9-b5975d57d52d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1848116-b2a8-4a76-a9ab-8022b0fa2d5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4e29e9c-9351-4176-b1df-aa4e04fc2e29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcbe3e8b-241f-44ad-9f70-24bf13eb87a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aff2d049-aaa7-4068-9cb1-ad3900d55e77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/304bef4f-add0-487c-b718-54fa10a4bc8f/217f6cb0-abcd-454a-ad83-6d0293d6b3f3")
 		(sheetname "/USB Isolation/")
@@ -10478,6 +13420,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bca74c4c-eebd-4f88-99c1-675817c1eb25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ff8e992-e488-4df1-a003-8d4072512cb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f0c14ac-0457-42c6-84d1-2137d081b90d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62136961-4f63-43cd-befd-226a8ef6694e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "498da574-b25a-4351-be8a-ffcc10aa0fc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/cd22d9a0-0c8a-4b0d-bd56-e840f42756ce")
 		(sheetname "/")
@@ -10589,6 +13596,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f460d493-bb13-4f07-8793-fa158d1a31ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07dbef5c-173f-4e72-9043-ff6e5dccb8f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07786f1f-36f9-419f-919e-47298ac255b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f21fb09-246a-465b-a5b5-331a0af2b6d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77c9714d-105b-4af6-960a-e0adb25045c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65408738-a1ff-4924-9cf5-ad7a393c9846")
 			(effects
 				(font
 					(size 1 1)
@@ -10756,6 +13828,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24874465-4b50-4aea-a2c4-f394c127ce2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e88a2289-64fb-47ba-9429-b810abd8b445")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7de41c6e-e9a3-4cbf-98a5-34761d97f831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "207a06a3-f174-490f-ad8b-fb107559a282")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8207f41-135e-45df-86b0-7f8ebf00e82a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1/273a470c-4160-4407-b3a8-577760dddf4b")
 		(sheetname "/Power/")
@@ -10909,6 +14046,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "12403a6d-4e19-430a-b6da-d5f77aaa35ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93b8713c-749f-4e60-a6b4-0d770783469a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14ac39aa-13b5-4aea-9235-08dffaf57062")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0217ee6d-9a12-4db2-8e7d-d2cb99fa93e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e8245e9-4711-47e6-b61d-a72d1cd4f6fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2016767-bca2-4005-95b2-a54ae69d8744")
 			(effects
 				(font
 					(size 1 1)
@@ -11076,6 +14278,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41bd7b57-6969-49f7-aaea-0485a27b5796")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5c0f313-5cb7-48d5-97fc-d03ce48ef0c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7213aad-c47a-428f-a36e-ff2959367b78")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e1d3aea-db71-486c-bbab-252bf81afd51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4962f753-2b7e-4b9b-a92f-c568b4aa9825")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1/7a7ef339-6359-4ca1-9685-e317604626b0")
 		(sheetname "/Power/")
@@ -11236,6 +14503,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcee7651-f444-4b4e-8532-315e447a9bab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4020589c-d1cd-4850-89af-d64d49d722a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8993257a-ecf5-4c5b-a0da-9537000a437a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdab39d0-c29e-48dd-b0f0-e5ec919a6f1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5dfb5845-9968-45a1-b88a-cfc24baba08a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/357429ae-0304-4600-8245-1ff48cf64176")
 		(sheetname "/Vehicle Interface/")
@@ -11387,6 +14719,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20db57e2-27ec-4521-9cad-4faf82e3265a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "953a7060-630f-4654-8908-d5bd7694ccee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2fa3f59-5391-475f-8648-a3193865281a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb3ec26b-318e-4622-9683-781cdb6bafb8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95fec8c8-038f-423d-b078-cb154c34d5d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/304bef4f-add0-487c-b718-54fa10a4bc8f/0ee42ccc-8c48-40be-aba9-016d69cb6854")
 		(sheetname "/USB Isolation/")
@@ -11397,6 +14794,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -11553,6 +14951,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "89f4e281-5d0b-46a2-9bba-e02f2f2ec9bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C5216549"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f174e662-3acd-4a7f-bab6-1b8a1f294e09")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7c7815e-aad7-4303-936a-6a1f5886ee3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e55e1d2-fdf8-4e76-b235-380eb1ba9896")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42fbe6a6-1c86-46c7-bb7a-a507b245485e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48210b06-040e-42be-92e4-389e4dd9f83a")
 			(effects
 				(font
 					(size 1 1)
@@ -11757,7 +15220,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(IC3-NC_1-Pad4)")
 			(pinfunction "NC_1_4")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "4c5ff987-e66d-45be-a92c-829875b5189a")
 		)
 		(pad "5" smd rect
@@ -11766,7 +15229,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(IC3-NC_2-Pad5)")
 			(pinfunction "NC_2_5")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "d3080c05-68b8-4bc2-ae98-f2b521e1f89c")
 		)
 		(pad "6" smd rect
@@ -11838,7 +15301,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(IC3-NC_3-Pad13)")
 			(pinfunction "NC_3_13")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "94298813-1232-457f-b963-610ecc43b425")
 		)
 		(pad "14" smd rect
@@ -11949,6 +15412,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ed9b9dbe-e691-4b74-9968-c408a1dc6719")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9face779-05e8-43c4-a7f7-98ce3132359c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "490a7239-a9cf-450d-965c-9b61f244dda7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0babfbc9-3057-40ee-a48a-74a70a00da1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94b17e5a-fccc-45d8-aac9-3b7276bc9716")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b871322b-9015-48d9-a643-239f9a6f27c6")
 			(effects
 				(font
 					(size 1 1)
@@ -12067,6 +15595,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dcbcf5bf-7d56-46d8-84e3-2620c0ff4f5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1385eeac-99f7-4571-b7fe-8e0cfe339f9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53ca1258-334f-4717-8a97-f4ba5e31ccd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b06c340b-28df-4961-9af4-c469efa23bf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a40f4dba-531b-4812-ae02-4ba5e1525242")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25e3adb6-31e8-4a80-a770-5b42c1cc242a")
 			(effects
 				(font
 					(size 1 1)
@@ -12288,6 +15881,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7b48a67-a0f3-4955-97d6-2d2a1023cad4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9a53f25-cb0a-4517-8db1-8ae26f3220e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ee49f2a-4c00-4d1f-a9bd-7af6dbf6a568")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c98e29a-3703-4d98-84d7-c67addbe9840")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "538e3424-9912-412a-b9c5-9ad5dda4f4f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/e0437f3d-b123-4803-b64a-d88f5e878961")
 		(sheetname "/Vehicle Interface/")
 		(sheetfile "vehicle_interface.kicad_sch")
@@ -12297,7 +15955,7 @@
 				(pins "1" "2" "3" "4" "5")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.5 6)
@@ -12829,6 +16487,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" "C46461551"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "072b4f4d-9f1f-4a6c-8b82-fb56cd2bf60e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "618b4a1a-9350-4ace-a96d-d73c3bf6e442")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5f20c10-399c-4f34-9b86-7aea4ec526ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03b7c6da-85b2-4dd0-93e2-e3b4803abed3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "026b9b6b-71b3-47f2-969f-4f76ba094f45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1/0b1aa332-e607-48f9-bc62-189cff9d5432")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -13207,6 +16930,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b899fbee-d9e4-4fe8-8e9d-e94b96aa24a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faea173d-97d9-472e-be52-75f56b1cee3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c735110-4900-451d-85c3-13f2c166df3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18c3e020-e137-495b-bafc-9adce6841db5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14af591a-4b40-48ce-9d0f-cb062711b0f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/bd1c42b1-9e8f-40e9-93a8-aee3dd2c9255")
 		(sheetname "/RP2354A/")
@@ -13358,6 +17146,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cc28fe8-e66b-4611-85a1-b0e386b8d68a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1ad1d63-88b3-44f8-9223-477ace5f9204")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e686d24-74e3-4975-a70e-ed2b1a96edd5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ff86ba8-0455-485f-8fa9-f2a5552ec430")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca6d9a3f-3b17-4293-b9f4-b5ead075f5f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/30013166-1097-4646-a876-8b66dcaff748")
 		(sheetname "/Vehicle Interface/")
@@ -13368,6 +17221,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -13470,6 +17324,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e336020b-25c0-45b6-9087-b0acaf7dfe84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "218b12a8-d558-477a-ace5-f0b058051160")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b2b9851-334c-4f0c-905c-85631b399b05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef1fe163-1f7c-48d8-a540-50551e052127")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b91acd2b-92a5-4c2e-bdf5-f5392a3600c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfe3cbea-70d6-448c-b6d9-a9a9851d11d7")
 			(effects
 				(font
 					(size 1 1)
@@ -13583,6 +17502,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C464127"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f039928-2904-49fa-a68d-7568b4acc6ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a676acd-5819-455f-b93b-0eaa5a1d04ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd817ffa-1e93-4c23-bc67-ed5e3fb151bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92ba0f07-c592-4b92-b551-069d12f5ff57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9d73c3e-b162-4a39-bed8-3ebcf62dde85")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13877,6 +17861,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2ee03b5-7c3c-4a76-9624-a5076a1411e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ab8831e-a718-40e5-a910-13e60b9af07e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96fea979-534e-48be-901e-08e637ca9073")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "caca25ae-ccf1-4d03-b8f9-70d05d45eed4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cce8c51d-f6f4-4e5c-90cd-ff7a73223a1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1/a7d00ede-f9f6-42e5-b0ba-8289cb9cfa06")
 		(sheetname "/Power/")
@@ -14028,6 +18077,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8ee7982-4cf7-445c-ac0b-ba4c2f6d4429")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b969e3ae-b822-4b5b-b1d4-2c07b59e49ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7908740d-6059-40af-9288-05820b08184c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9954c24b-9fca-4a6e-b734-e0357a62042c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a870b221-ebd3-43c3-ab60-611f509a7bc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/2d757d2f-7729-4a61-86fd-36924fcc121b")
 		(sheetname "/Vehicle Interface/")
@@ -14038,6 +18152,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -14140,6 +18255,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1a9e3c71-b557-43dd-ad7f-bba3abd29d18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bad22184-2683-4f61-b792-08ed2c931ec4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "731a946f-0586-4cb6-8206-dd5209117130")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09e08267-e2f9-4ad5-a43e-808e8e9a3ad5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05baa8b2-24f7-420a-920c-a68d21458336")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "004a14a5-7640-4a65-8d1f-6a1d2a1a4723")
 			(effects
 				(font
 					(size 1 1)
@@ -14300,6 +18480,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "99c417d8-6e87-4122-bf99-3d103fd06505")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cf0c5a8-0b0f-4235-8219-b7e77f136641")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46b22747-0d14-42d0-8426-f9c5e9962794")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23d1f403-6017-4415-b5ed-9af40765f70b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae69a4c4-00b2-4909-afa3-37fcac0c928c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce0011f0-1aaa-4676-9c88-bc46dbcded3d")
 			(effects
 				(font
 					(size 1 1)
@@ -14513,6 +18758,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "360b6540-7bdb-4b5b-a472-88ed9410de8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C42411119"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bf10dc4-57b6-43b7-b8f3-812297ec2158")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "181efd40-897e-4993-9404-ac77967c0945")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7ec438c-d235-4d11-933f-4514c55e4bb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4944032-d61f-415d-b6d9-48d174748cf0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "963af8fc-9aa5-4149-87b0-e6190eba8f63")
 			(effects
 				(font
 					(size 1 1)
@@ -14774,6 +19084,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" "C3025063"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "299fdb01-7964-4297-98d2-f0d4797ead72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11dad19c-8ea1-4b8d-906b-0f0b7051eaf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d76b7bcb-7335-43ac-8181-525e9f83593f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b463533e-bd83-4037-8242-321375b384dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9c17ce3-a1eb-40c8-95f8-d03729e9154e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/304bef4f-add0-487c-b718-54fa10a4bc8f/5acb83f5-a1a3-4cd9-b4b2-6cb87385951c")
 		(sheetname "/USB Isolation/")
@@ -14935,7 +19310,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(J1-SBU1-PadA8)")
 			(pinfunction "SBU1_A8")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "3a355c47-3905-434a-aa36-3cd1e1741c2a")
 		)
 		(pad "A9" smd roundrect
@@ -15015,7 +19390,7 @@
 			(roundrect_rratio 0.25)
 			(net "unconnected-(J1-SBU2-PadB8)")
 			(pinfunction "SBU2_B8")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "10358db4-950f-48b6-975f-22618b7806a7")
 		)
 		(pad "B9" smd roundrect
@@ -15156,6 +19531,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c1834be0-6a2f-4330-aed2-9587cd03c373")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "136d39e3-cf14-4af6-a3d5-022c775c0446")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4bdca92-e2b2-4935-88d9-0a7f94336955")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b9cc194-f0c6-4e97-b28d-8a126dc98995")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c306fe5-14e0-4c08-b472-b303d2a38b0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87a01957-817c-4c98-b2ea-8a125a214d7c")
 			(effects
 				(font
 					(size 1 1)
@@ -15323,6 +19763,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae051815-075f-49b9-872c-30f9cbf49cc4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ece48a6-7d99-45d0-987a-ca2d4f4c60d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b647a813-5f00-4492-9734-c73f6a1d4ed0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21bd1b04-1660-412f-b921-1ed20fb172bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b97f822d-64ae-47e6-8a4a-974c9809515f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/1460275c-c780-4bd2-abbf-3db5db1d875e")
 		(sheetname "/RP2354A/")
@@ -15476,6 +19981,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "86b3f421-9195-4ed0-bd5f-fdd4d2817c0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9563efb-18f1-453c-a4d6-6048a26ad2a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17d7d966-47c2-4f8f-8215-7221bf4e3659")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46bc2a67-8d12-47f9-953a-138b7d1465f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b44e481-e9b7-47f5-a459-1111d6f7060a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bae97441-d9bc-497d-b5c7-8b3582a4548a")
 			(effects
 				(font
 					(size 1 1)
@@ -15643,6 +20213,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb4a460c-0f75-4a4e-ae26-fef9aed21419")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25039193-5310-447a-8495-c7a39fe67e3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7576c668-eceb-4092-a054-ab129abd9c4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66608a98-c537-42c6-b85e-94f27ee4a62f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55554e32-9186-41b1-a879-0a39ff519be1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/d951e016-e20e-4cc9-98eb-1495822ea34b")
 		(sheetname "/RP2354A/")
@@ -15803,6 +20438,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bddf39f-1ced-4114-98bb-f6718e23edec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d48d11fa-7ac6-4584-9d2d-d2cb16653875")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d308d1cc-b0c6-4d9e-8c6d-5ea4fb0a747b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d480695a-cd43-4f1e-a083-526ab5320dee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4cf3ca7a-006f-4bd9-8a6f-e35264b7012b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/5359704f-e1d3-4e67-b36a-b9246a1a8ebc")
 		(sheetname "/")
@@ -15914,6 +20614,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8cf45232-321f-4446-8a3e-9cdbd41f6c81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac2c1d2c-d7bd-429b-9e14-cf97f54ea8ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e50228e0-e3e3-4aea-b71c-f4e5797ab1cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7a51c98-935c-41ae-9c26-e3e95b3bc9b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee450949-0afe-4a48-bd8a-21bdf50439c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3ee8307-9ee2-4830-b210-88692dded3ff")
 			(effects
 				(font
 					(size 1 1)
@@ -16081,6 +20846,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ef23d28-86f3-4980-af4b-0fa94ddd9726")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e6661ba-4221-46a3-9b3d-d45d8ed0428b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4982cbb8-9ff7-4fb7-a46f-7af54d735fe2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b9d664c-4743-415d-9037-6a7f5bcadf67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf9b655c-dff2-4312-908d-a1e01298ce06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/49693743-7195-478a-a29c-fd4fce5bc5c7")
 		(sheetname "/RP2354A/")
@@ -16226,6 +21056,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce93553d-3db1-4870-a81d-d1b16a94abaf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9af3b395-ef87-494a-b72a-09c8deb3d5d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "639f6963-71fa-4b2e-87d5-3ab904e35b75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67245879-ea9c-4fa6-a823-cf479d78124b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "978d7f98-8f83-4145-b4cf-d6faea95ff3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16418,6 +21313,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d7f851c-841e-4a71-ba7f-533cbe5d984e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9945b571-066b-4c75-b17b-961b3a49d807")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "082f63af-6ae0-4911-afd7-1d332d3e4112")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "144ca618-8d60-4ab7-a763-1a26de801485")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9886047-fc53-4f5d-b9a7-950c1c4d44a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/ffc4b0bd-0ab0-410f-aa83-d070eecc8dc1/ba66b998-27b9-4a5f-8eea-9c685eb2b1f7")
 		(sheetname "/Power/")
@@ -16428,6 +21388,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16525,6 +21486,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" "C83333"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7d1a7b8-55ed-4d3a-b920-3a80456a2601")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95889c33-d539-4db6-97ef-8ff0f4416b2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cb8e062-49cb-42d7-bbb0-73f0d7532c92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3334ed8-61e9-4dd4-98df-a46179a10359")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "839b5b53-9162-4c3c-ba89-eaad8b85138c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16872,6 +21898,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" "C160403"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c96a50f-b752-4488-9745-3a5de0879bb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48c5876a-e772-481d-8f99-fff530b6d85e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a396434-9a2c-4a6b-976b-8e20837865c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3870882-4701-4b1b-be7f-a4bd4c7fcb53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0dba23ee-f77e-47e8-a726-0c734a1a2ece")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/1e03cc0a-6ff0-4ffa-8c67-8bd6ffc32d81/6ed36c81-d0c2-46ed-a541-4f96bcc93465")
 		(sheetname "/RP2354A/")
 		(sheetfile "rp2354a.kicad_sch")
@@ -17157,6 +22248,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2cb3c01-d173-41a8-a7fc-bb11258caa53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8292ea5-5b8c-4a31-8099-30eb0b090d33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfcceb62-9fd9-498c-9266-3c7d0b8d7053")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b89249d0-f8d4-46b2-9df7-adb5fdb7c2ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce74addf-f833-4ca8-9702-5e28b0531f80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Fiducial*")
 		(path "/f14e7424-53bd-4075-be98-439066358022")
 		(sheetname "/")
@@ -17269,6 +22425,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2f0f10bb-2671-4fe7-bcaa-04156c721dd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "260f4db2-5024-48d4-b33e-4937aac63de9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "319a3158-7d88-462c-bda0-bbb6cae8261a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc642409-bbd3-4bdf-ac61-9e00bffc542c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ddeb8f64-514c-4f8d-ae50-8028ccc71e40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7778146d-dcb1-4819-945c-ebf829373ef9")
 			(effects
 				(font
 					(size 1 1)
@@ -17436,6 +22657,71 @@
 				)
 			)
 		)
+		(property "JLC Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f249c9e4-4d1a-4dc6-9c45-99fe55bb3bcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e17ac5d9-4c4c-4e0d-b76b-b6fad64afce1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14712de2-c6a2-48a4-879b-d27629d06ae9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f472a794-1b17-4a0c-b072-bda883952b03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b02e6f9d-6504-4013-b5f9-dd120ff1b79b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/915c1d30-8224-4c06-b75a-21624dbd5336/a5b5ea86-1b81-47a3-bf33-2c720104033a")
 		(sheetname "/Vehicle Interface/")
@@ -17589,6 +22875,71 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "815d7318-a9ba-469b-b6f2-e1aa48b5b291")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLC Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c919893-3dbe-46ed-943c-ede3154cda8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f7dbf10-c8f0-4cf7-aba1-4d9679aba61e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97e3c805-6fac-48aa-8f42-1dc662360133")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e0b7748-a624-4464-a1e5-83ab5e2e93c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf052f89-d62f-4b13-b1a1-e37c6e868013")
 			(effects
 				(font
 					(size 1 1)
