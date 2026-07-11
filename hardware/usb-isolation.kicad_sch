@@ -2734,7 +2734,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 139.7) (xy 80.01 139.7)
+			(xy 68.58 139.7) (xy 80.01 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2854,7 +2854,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 53.34) (xy 234.95 53.34)
+			(xy 226.06 53.34) (xy 237.49 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2974,7 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 142.24) (xy 80.01 142.24)
+			(xy 68.58 142.24) (xy 80.01 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2984,7 +2984,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 53.34) (xy 205.74 53.34)
+			(xy 194.31 53.34) (xy 205.74 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3402,8 +3402,8 @@
 		)
 		(uuid "6628980e-681e-47e1-aa55-8633d3d5bf58")
 	)
-	(label "USB_D-"
-		(at 69.85 139.7 0)
+	(label "USB_C_D-"
+		(at 68.58 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3412,8 +3412,8 @@
 		)
 		(uuid "82c37df6-2457-4648-877c-cf73cc53cff6")
 	)
-	(label "USB_D-"
-		(at 234.95 53.34 180)
+	(label "USB_C_D-"
+		(at 237.49 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3422,8 +3422,8 @@
 		)
 		(uuid "8c41a163-49ac-407d-ba54-93cf75689bd4")
 	)
-	(label "USB_D+"
-		(at 69.85 142.24 0)
+	(label "USB_C_D+"
+		(at 68.58 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3432,7 +3432,7 @@
 		)
 		(uuid "910fdbf4-0ec6-4ad0-a948-23dc959d9560")
 	)
-	(label "USB_D-"
+	(label "USB_C_D-"
 		(at 78.74 58.42 180)
 		(effects
 			(font
@@ -3452,7 +3452,7 @@
 		)
 		(uuid "b44147dd-6a87-4239-b3bc-4b774c4eb8cc")
 	)
-	(label "USB_D+"
+	(label "USB_C_D+"
 		(at 78.74 63.5 180)
 		(effects
 			(font
@@ -3472,8 +3472,8 @@
 		)
 		(uuid "d5a77a77-ea4e-492f-92b0-978b20d8f27e")
 	)
-	(label "USB_D+"
-		(at 196.85 53.34 0)
+	(label "USB_C_D+"
+		(at 194.31 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
