@@ -98,7 +98,48 @@ function createStore(initialState) {
 
 function createRegistry(store) {
 
+    // Registered Components
     const components = []
+
+    // Store changes ready to be applied to components
+    let pendingChanged = new Set()
+    let frameScheduled = false
+
+    function scheduleRender() {
+
+        // A frame is already queued
+        if (frameScheduled) {
+            return
+        }
+
+        frameScheduled = true
+
+        requestAnimationFrame(() => {
+            
+            // Read fresh state at time of render
+            const state = store.get()
+            const changed = pendingChanged
+
+            // Reset in case components call set() on render
+            // which would get lost during the pending render
+            pendingChanged = new Set()
+            frameScheduled = false
+
+            // Iterate through components to find which need updating
+            for (const c of components) {
+
+                // If component doesn't provide keys it's watching or a watched
+                // key has changed, trigger the render for that component.
+                const relevant = !c.watches || c.watches.some(k => changed.has(k))
+
+                if (relevant) {
+                    c.render(state)
+                }
+            }
+
+        })
+
+    }
 
     /*
 
@@ -129,16 +170,15 @@ function createRegistry(store) {
     }
 
     store.subscribe((state, changed) => {
-        for (const c of components) {
-
-            // If component doesn't provide keys it's watching or a watched
-            // key has changed, trigger the render for that component.
-            const relevant = !c.watches || c.watches.some(k => changed.has(k))
-
-            if (relevant) {
-                c.render(state)
-            }
+        
+        // Accumlate keys across all set() calls before the next frame
+        for (const key of changed) {
+            pendingChanged.add(key)
         }
+
+        // Schedule the component.render() calls in the next frame
+        scheduleRender()
+
     })
 
     console.log("Store: Component Registry Setup")
