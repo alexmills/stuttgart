@@ -1,6 +1,13 @@
 // MAIN THREAD
 
 import { store } from '../store.js'
+import { MSG, ErrorCategory } from './workerMessages.js'
+
+/*
+
+    Worker Support
+
+*/
 
 const worker = new Worker('./serialWorker.js', {type: 'module'})
 
@@ -10,25 +17,46 @@ worker.onmessage = (e) => {
 
     switch (msg.type) {
 
-        case 'connected':
+        case MSG.CONNECTED:
             store.set({ serialConnected: true, serialConnecting: false, serialError: null })
             break;
         
-        case 'disconnected':
+        case MSG.DISCONNECTED:
             store.set({ serialConnected: false })
             break;
 
-        case 'error':
-            store.set({ serialConnected: false, serialConnecting: false, serialError: msg.message })
-
-        case 'packet':
-            // Placeholder until packet decoder is in
-            console.log('packet:', msg.packet)
+        case MSG.ERROR:
+            // PLACEHOLDER - Handle errors nicer...
+            if (msg.category === ErrorCategory.CONNECTION) {
+                store.set({ serialConnected: false, serialConnecting: false, serialError: msg.message })
+            } else if (msg.category === ErrorCategory.STORAGE) {
+                store.set({ storageError: msg.message })
+            }
             break;
+
+        case MSG.LIVE:
+            // PLACEHOLDER
+            console.log('live:', msg.packetType, msg.data)
+            break;
+
+        case MSG.CMD_RESPONSE:
+            // PLACEHOLDER
+            console.log('cmd response:', msg.seq, msg.payload)
+            break;
+
+        default:
+            // PLACEHOLDER
+            console.log('unhandled worker message', msg.type)
 
     }
 
 }
+
+/*
+
+    Serial Connection
+
+*/
 
 export async function connect() {
 

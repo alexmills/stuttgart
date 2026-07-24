@@ -198,7 +198,10 @@ const defaultState = {
     serialConnected: false,
     serialConnecting: false,
     serialPortName: false,
-    serialError: null
+    serialError: null,
+
+    // Storage
+    storageError: null,
 
 }
 

@@ -6,6 +6,16 @@ import {
     decodeDeviceStatus,
     decodeVoltageSample
 } from "./payloadDecoders.js"
+import { 
+    MSG,
+    ErrorCategory,
+    connectedMsg,
+    disconnectedMsg,
+    errorMsg,
+    liveMsg,
+    cmdResponseMsg
+} from "./workerMessages.js"
+
 
 // All supported Stuttgart Packet Types
 const PACKET_TYPES = {
@@ -31,7 +41,7 @@ let flushTimer = null
 
 // Warm connection to DB
 openDb().catch((err) => {
-    self.postMessage({ type: 'error', message: `Failed to open database: ${err.message}`})
+    self.postMessage(errorMsg(ErrorCategory.STORAGE, `Failed to open database: ${err.message}`))
 })
 
 function queueForPresistance(packetType, seq, decoded) {
@@ -65,7 +75,7 @@ async function flush() {
     try {
         await writeBatch(batch)
     } catch (err) {
-        self.postMessage({ type: 'error', message: `DB write failed: ${err.message}`})
+        self.postMessage(errorMsg(ErrorCategory.STORAGE, `DB write failed: ${err.message}`))
     }
 }
 
@@ -91,24 +101,24 @@ const parser = new PacketParser(({ type, seq, payload }) => {
         case 'VOLTAGE_SAMPLE':
             const decoded = decodeVoltageSample(payload)
             queueForPresistance(name, seq, decoded)
-            self.postMessage({ type: 'live', packetType: name, seq, data: decoded })
+            self.postMessage(liveMsg(name,seq,decoded))
             break;
 
         case 'BUS_STATE':
             const decoded = decodeBusState(payload)
             queueForPresistance(name, seq, decoded)
-            self.postMessage({ type: 'live', packetType: name, seq, data: decoded })
+            self.postMessage(liveMsg(name,seq,decoded))
             break;
 
         case 'DEVICE_STATUS':
             const decoded = decodeDeviceStatus(payload)
             queueForPresistance(name, seq, decoded)
-            self.postMessage({ type: 'live', packetType: name, seq, data: decoded })
+            self.postMessage(liveMsg(name,seq,decoded))
             break;
 
         case 'CMD_RESPONSE':
             // Not persisted - live request/response correlation only
-            self.postMessage({ type: 'cmdResponse', seq, payload })
+            self.postMessage(cmdResponseMsg(seq, payload))
             break;
     }
 
@@ -142,7 +152,7 @@ async function readLoop(port) {
 
             }
         } catch (err) {
-            self.postMessage({ type: 'error', message: err.message })
+            self.postMessage(errorMsg(ErrorCategory.CONNECTION, err.message))
         } finally {
             reader.releaseLock()
         }
@@ -150,13 +160,13 @@ async function readLoop(port) {
 
     // Don't lose pending records when the connection ends
     await flush() 
-    self.postMessage({ type: 'disconnected' })
+    self.postMessage(disconnectedMsg())
 }
 
 async function handleConnect() {
 
     if (connectionActive) {
-        self.postMessage({type:'error', message:'Connection already in progress or open.'})
+        self.postMessage(errorMsg(ErrorCategory.CONNECTION, 'Connection already in progress or open.'))
         return true
     }
 
@@ -168,18 +178,18 @@ async function handleConnect() {
         const port = ports[ports.length - 1]
 
         if (!port) {
-            self.postMessage({ type: 'error', message: 'No authorized port found.'})
+            self.postMessage(errorMsg(ErrorCategory.CONNECTION, 'No authorized port found.'))
             return
         }
 
         await port.open({ baudeRate: 115200 })
-        self.postMessage({ type: 'connected' })
+        self.postMessage(connectedMsg())
 
         // Start reading data from the port
         await readLoop(port)
 
     } catch (err) {
-        self.postMessage({type:'error', message: err.message})
+        self.postMessage(errorMsg(ErrorCategory.CONNECTION, err.message))
     } finally {
         // Released once the whole connection lifecycle ends
         connectionActive = false
