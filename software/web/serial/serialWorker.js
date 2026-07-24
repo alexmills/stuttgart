@@ -1,8 +1,124 @@
 import { PacketParser } from "./packetParser.js"
+import { openDb, writeBatch } from "./db.js"
+import {
+    decodeCanFrame,
+    decodeBusState,
+    decodeDeviceStatus,
+    decodeVoltageSample
+} from "./payloadDecoders.js"
 
-const parser = new PacketParser((packet) => {
-    self.postMessage({ type:'packet', packet })
+// All supported Stuttgart Packet Types
+const PACKET_TYPES = {
+    0x01: 'CAN_FRAME',
+    0x02: 'VOLTAGE_SAMPLE',
+    0x03: 'BUS_STATE',
+    0x04: 'CMD_RESPONSE',
+    0x05: 'DEVICE_STATUS'
+}
+
+// Hybrid flush trigger - whichever limit hits first
+const FLUSH_INTERVAL_MS = 200
+const FLUSH_MAX_BATCH = 500
+
+let pendingRecords = []
+let flushTimer = null
+
+/*
+
+    IndexedDB Persistance
+
+*/
+
+// Warm connection to DB
+openDb().catch((err) => {
+    self.postMessage({ type: 'error', message: `Failed to open database: ${err.message}`})
 })
+
+function queueForPresistance(packetType, seq, decoded) {
+
+    pendingRecords.push({
+        packetType,
+        seq,
+        timestamp: decoded.timestamp,
+        data: decoded
+    })
+
+    if (pendingRecords.length >= FLUSH_MAX_BATCH) {
+        flush()
+    } else if (!flushTimer) {
+        flushTimer = setTimeout(flush, FLUSH_INTERVAL_MS)
+    }
+
+}
+
+async function flush() {
+    clearTimeout(flushTimer)
+    flushTimer = null
+
+    if (pendingRecords.length === 0) {
+        return
+    }
+
+    const batch = pendingRecords
+    pendingRecords = []
+
+    try {
+        await writeBatch(batch)
+    } catch (err) {
+        self.postMessage({ type: 'error', message: `DB write failed: ${err.message}`})
+    }
+}
+
+/*
+
+    Packet Parsing
+
+*/
+
+const parser = new PacketParser(({ type, seq, payload }) => {
+
+    const name = PACKET_TYPES[type]
+    if (!name) {
+        return
+    }
+
+    switch (name) {
+        case 'CAN_FRAME':
+            // Persisted Only - High volume, not needed reactively
+            queueForPresistance(name, seq, decodeCanFrame(payload))
+            break;
+
+        case 'VOLTAGE_SAMPLE':
+            const decoded = decodeVoltageSample(payload)
+            queueForPresistance(name, seq, decoded)
+            self.postMessage({ type: 'live', packetType: name, seq, data: decoded })
+            break;
+
+        case 'BUS_STATE':
+            const decoded = decodeBusState(payload)
+            queueForPresistance(name, seq, decoded)
+            self.postMessage({ type: 'live', packetType: name, seq, data: decoded })
+            break;
+
+        case 'DEVICE_STATUS':
+            const decoded = decodeDeviceStatus(payload)
+            queueForPresistance(name, seq, decoded)
+            self.postMessage({ type: 'live', packetType: name, seq, data: decoded })
+            break;
+
+        case 'CMD_RESPONSE':
+            // Not persisted - live request/response correlation only
+            self.postMessage({ type: 'cmdResponse', seq, payload })
+            break;
+    }
+
+})
+
+/*
+
+    Serial Connection
+
+*/
 
 // Guard agaisnt overlapping connect attempts
 let connectionActive = false
@@ -31,6 +147,10 @@ async function readLoop(port) {
             reader.releaseLock()
         }
     }
+
+    // Don't lose pending records when the connection ends
+    await flush() 
+    self.postMessage({ type: 'disconnected' })
 }
 
 async function handleConnect() {
@@ -66,10 +186,6 @@ async function handleConnect() {
     }
 
 }
-
-
-
-
 
 self.onmessage = async (e) => {
 
