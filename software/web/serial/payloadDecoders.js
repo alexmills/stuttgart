@@ -126,7 +126,7 @@ export function decodeDeviceStatus(payload) {
     return {
         timestamp: dv.getUint32(0, true),
         uptime: dv.getUint32(4, true),
-        framesDropeed: dv.getUint32(8, true),
+        framesDropped: dv.getUint32(8, true),
         samplesDropped: dv.getUint32(12, true),
         busLoadPct: dv.getUint8(16),
         msgCount: dv.getUint32(17, true),

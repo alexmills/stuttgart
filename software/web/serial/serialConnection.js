@@ -14,6 +14,48 @@ import {
 
 */
 
+function handleLiveMessage(msg) {
+
+    switch (msg.packetType) {
+        
+        case 'VOLTAGE_SAMPLE':
+            store.set({ voltageLatest: msg.data })
+            break;
+
+        case 'DEVICE_STATUS':
+            store.set({ deviceStatusLatest: msg.data })
+            break;
+            
+        case 'BUS_STATE': {
+            const state = store.get()
+            store.set({ busStateEvents: [...state.busStateEvents, msg.data]})
+        }
+    }
+
+}
+
+function handleError(msg) {
+
+    switch (msg.category) {
+
+        case ErrorCategory.CONNECTION:
+            store.set({ serialConnected: false, serialConnecting: false, serialError: msg.message })
+            break;
+
+        case ErrorCategory.STORAGE:
+            store.set({ storageError: msg.message })
+            break;
+
+    }
+
+}
+
+/*
+
+    Worker
+
+*/
+
 const worker = new Worker(
     new URL('./serialWorker.js', import.meta.url),
     {type: 'module'}
@@ -38,17 +80,11 @@ worker.onmessage = (e) => {
             break;
 
         case WorkerMsg.ERROR:
-            // PLACEHOLDER - Handle errors nicer...
-            if (msg.category === ErrorCategory.CONNECTION) {
-                store.set({ serialConnected: false, serialConnecting: false, serialError: msg.message })
-            } else if (msg.category === ErrorCategory.STORAGE) {
-                store.set({ storageError: msg.message })
-            }
+            handleError(msg)
             break;
 
         case WorkerMsg.LIVE:
-            // PLACEHOLDER
-            console.log('live:', msg.packetType, msg.data)
+            handleLiveMessage(msg)
             break;
 
         case WorkerMsg.CMD_RESPONSE:
