@@ -1,7 +1,12 @@
 // MAIN THREAD
 
 import { store } from '../store.js'
-import { MSG, ErrorCategory } from './workerMessages.js'
+import { 
+    WorkerMsg,
+    ErrorCategory,
+    connectMsg,
+    disconnectMsg
+} from './workerMessages.js'
 
 /*
 
@@ -20,19 +25,19 @@ worker.onmessage = (e) => {
 
     switch (msg.type) {
 
-        case MSG.LOADED:
+        case WorkerMsg.LOADED:
             console.log("Worker Loaded")
             break;
 
-        case MSG.CONNECTED:
+        case WorkerMsg.CONNECTED:
             store.set({ serialConnected: true, serialConnecting: false, serialError: null })
             break;
         
-        case MSG.DISCONNECTED:
+        case WorkerMsg.DISCONNECTED:
             store.set({ serialConnected: false })
             break;
 
-        case MSG.ERROR:
+        case WorkerMsg.ERROR:
             // PLACEHOLDER - Handle errors nicer...
             if (msg.category === ErrorCategory.CONNECTION) {
                 store.set({ serialConnected: false, serialConnecting: false, serialError: msg.message })
@@ -41,12 +46,12 @@ worker.onmessage = (e) => {
             }
             break;
 
-        case MSG.LIVE:
+        case WorkerMsg.LIVE:
             // PLACEHOLDER
             console.log('live:', msg.packetType, msg.data)
             break;
 
-        case MSG.CMD_RESPONSE:
+        case WorkerMsg.CMD_RESPONSE:
             // PLACEHOLDER
             console.log('cmd response:', msg.seq, msg.payload)
             break;
@@ -71,9 +76,13 @@ export async function connect() {
 
     try {
         await navigator.serial.requestPort()
-        worker.postMessage({ type: 'connect' })
+        worker.postMessage(connectMsg())
     } catch (err) {
         store.set({ serialConnecting: false, serialError: err.message })
     }
 
+}
+
+export function disconnect() {
+    worker.postMessage(disconnectMsg())
 }

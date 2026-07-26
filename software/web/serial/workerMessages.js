@@ -1,4 +1,29 @@
-export const MSG = Object.freeze({
+/*
+
+    Main Thread to Worker
+
+*/
+
+export const ClientMsg = Object.freeze({
+    CONNECT: 'connect',
+    DISCONNECT: 'disconnect',
+})
+
+export const connectMsg = () => ({
+    type: ClientMsg.CONNECT
+})
+
+export const disconnectMsg = () => ({
+    type: ClientMsg.DISCONNECT
+})
+
+/*
+
+    Worker to Main Thread
+
+*/
+
+export const WorkerMsg = Object.freeze({
     LOADED: 'loaded',
     CONNECTED: 'connected',
     DISCONNECTED: 'disconnected',
@@ -15,32 +40,32 @@ export const ErrorCategory = Object.freeze({
 // One factory per message shape
 
 export const loadedMsg = () => ({
-    type: MSG.LOADED
+    type: WorkerMsg.LOADED
 })
 
 export const connectedMsg = () => ({ 
-    type: MSG.CONNECTED 
+    type: WorkerMsg.CONNECTED 
 })
 
 export const disconnectedMsg = () => ({
-    type: MSG.DISCONNECTED
+    type: WorkerMsg.DISCONNECTED
 })
 
 export const errorMsg = (category, message) => ({
-    type: MSG.ERROR,
+    type: WorkerMsg.ERROR,
     category,
     message
 })
 
 export const liveMsg = (packetType, seq, data) => ({
-    type: MSG.LIVE,
+    type: WorkerMsg.LIVE,
     packetType,
     seq,
     data
 })
 
 export const cmdResponseMsg = (seq,payload) => ({
-    type: MSG.CMD_RESPONSE,
+    type: WorkerMsg.CMD_RESPONSE,
     seq,
     payload
 })

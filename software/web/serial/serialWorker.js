@@ -7,7 +7,7 @@ import {
     decodeVoltageSample
 } from "./payloadDecoders.js"
 import { 
-    MSG,
+    ClientMsg,
     ErrorCategory,
     loadedMsg,
     connectedMsg,
@@ -134,19 +134,21 @@ const parser = new PacketParser(({ type, seq, payload }) => {
 
 */
 
-// Guard agaisnt overlapping connect attempts
-let connectionActive = false
+let connectionActive = false        // Guard agaisnt overlapping connect attempts
+let currentReader = null
+let disconnectRequested = false
 
 async function readLoop(port) {
-    while(port.readable) {
+    while(port.readable && !disconnectRequested) {
         const reader = port.readable.getReader()
+        currentReader = reader
 
         try {
             while(true) {
 
                 const { value, done } = await reader.read()
                 
-                // Reader has been cancelled
+                // currentReader has been cancelled
                 if (done) {    
                     break;
                 }
@@ -164,6 +166,16 @@ async function readLoop(port) {
 
     // Don't lose pending records when the connection ends
     await flush() 
+
+    // If we are here, the device removal has made port.readable null
+    // or a disconnect is requested from the UI. If requested, we still
+    // need to close the port.
+    if (disconnectRequested && port.readable) {
+        await port.close()
+    }
+
+    disconnectRequested = false
+
     self.postMessage(disconnectedMsg())
 }
 
@@ -201,11 +213,32 @@ async function handleConnect() {
 
 }
 
+async function handleDisconnect() {
+
+    // No Connection Active
+    if (!connectionActive) {
+        self.postMessage(errorMsg(ErrorCategory.CONNECTION, 'No active connection to disconnect'))
+        return
+    }
+
+    // Request disconnection whether currentReader setup ot not
+    disconnectRequested = true
+
+    if (currentReader) {
+        // Unblocks the pending read() with done:true
+        await currentReader.cancel()
+    }
+
+}
+
 self.onmessage = async (e) => {
 
     switch(e.data.type) {
-        case 'connect':
+        case ClientMsg.CONNECT:
             handleConnect()
+            break;
+        case ClientMsg.DISCONNECT:
+            handleDisconnect()
             break;
     }
 
