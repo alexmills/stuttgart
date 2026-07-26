@@ -1,4 +1,5 @@
 export const MSG = Object.freeze({
+    LOADED: 'loaded',
     CONNECTED: 'connected',
     DISCONNECTED: 'disconnected',
     ERROR: 'error',
@@ -12,6 +13,10 @@ export const ErrorCategory = Object.freeze({
 })
 
 // One factory per message shape
+
+export const loadedMsg = () => ({
+    type: MSG.LOADED
+})
 
 export const connectedMsg = () => ({ 
     type: MSG.CONNECTED 

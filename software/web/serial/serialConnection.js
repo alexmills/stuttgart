@@ -9,13 +9,20 @@ import { MSG, ErrorCategory } from './workerMessages.js'
 
 */
 
-const worker = new Worker('./serialWorker.js', {type: 'module'})
+const worker = new Worker(
+    new URL('./serialWorker.js', import.meta.url),
+    {type: 'module'}
+)
 
 worker.onmessage = (e) => {
 
     const msg = e.data
 
     switch (msg.type) {
+
+        case MSG.LOADED:
+            console.log("Worker Loaded")
+            break;
 
         case MSG.CONNECTED:
             store.set({ serialConnected: true, serialConnecting: false, serialError: null })

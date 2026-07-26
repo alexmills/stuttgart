@@ -9,6 +9,7 @@ import {
 import { 
     MSG,
     ErrorCategory,
+    loadedMsg,
     connectedMsg,
     disconnectedMsg,
     errorMsg,
@@ -98,23 +99,26 @@ const parser = new PacketParser(({ type, seq, payload }) => {
             queueForPresistance(name, seq, decodeCanFrame(payload))
             break;
 
-        case 'VOLTAGE_SAMPLE':
+        case 'VOLTAGE_SAMPLE': {
             const decoded = decodeVoltageSample(payload)
             queueForPresistance(name, seq, decoded)
             self.postMessage(liveMsg(name,seq,decoded))
             break;
+        }
 
-        case 'BUS_STATE':
+        case 'BUS_STATE': {
             const decoded = decodeBusState(payload)
             queueForPresistance(name, seq, decoded)
             self.postMessage(liveMsg(name,seq,decoded))
             break;
+        }
 
-        case 'DEVICE_STATUS':
+        case 'DEVICE_STATUS': {
             const decoded = decodeDeviceStatus(payload)
             queueForPresistance(name, seq, decoded)
             self.postMessage(liveMsg(name,seq,decoded))
             break;
+        }
 
         case 'CMD_RESPONSE':
             // Not persisted - live request/response correlation only
@@ -206,3 +210,5 @@ self.onmessage = async (e) => {
     }
 
 }
+
+self.postMessage(loadedMsg())
