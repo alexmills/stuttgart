@@ -1,6 +1,7 @@
 // MAIN THREAD
 
 import { store } from '../store.js'
+import { appLog } from '../appLog.js'
 import { 
     WorkerMsg,
     ErrorCategory,
@@ -40,10 +41,12 @@ function handleError(msg) {
 
         case ErrorCategory.CONNECTION:
             store.set({ serialConnected: false, serialConnecting: false, serialError: msg.message })
+            appLog.error(`Serial Error: ${msg.message}`)
             break;
 
         case ErrorCategory.STORAGE:
             store.set({ storageError: msg.message })
+            appLog.error(`Storage Error: ${msg.message}`)
             break;
 
     }
@@ -68,14 +71,16 @@ worker.onmessage = (e) => {
     switch (msg.type) {
 
         case WorkerMsg.LOADED:
-            console.log("Worker Loaded")
+            appLog.info("Worker Thread Loaded")
             break;
 
         case WorkerMsg.CONNECTED:
+            appLog.info("Serial Port Connected")
             store.set({ serialConnected: true, serialConnecting: false, serialError: null })
             break;
         
         case WorkerMsg.DISCONNECTED:
+            appLog.info("Serial Port Disconnected")
             store.set({ serialConnected: false })
             break;
 
@@ -94,7 +99,7 @@ worker.onmessage = (e) => {
 
         default:
             // PLACEHOLDER
-            console.log('unhandled worker message', msg.type)
+            appLog.warn(`Unhandled worker message: ${msg.type}`)
 
     }
 

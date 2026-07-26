@@ -1,5 +1,5 @@
 import { PacketParser } from "./packetParser.js"
-import { openDb, writeBatch } from "./db.js"
+import { openDb, writeBatch } from "../db.js"
 import {
     decodeCanFrame,
     decodeBusState,

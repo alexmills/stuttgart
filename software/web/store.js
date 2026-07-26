@@ -1,3 +1,4 @@
+import { appLog } from './appLog.js'
 
 /*
 
@@ -13,8 +14,7 @@ function loadPersistedState() {
         const saved = localStorage.getItem(STORAGE_KEY)
         return saved ? JSON.parse(saved) : {}
     } catch (e) {
-        alert("unable to load persisted state")
-        console.error("Unable to load persisted state")
+        appLog.error(`Unable to load persisted state: ${JSON.stringify(e)}`)
         console.log(e)
     }
 }
@@ -30,8 +30,7 @@ function persistState(state) {
     try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave))
     } catch (e) {
-        alert("Unable to save persisted state")
-        console.error("Unable to save persisted state")
+        appLog.error(`Unable to save persisted state: ${JSON.stringify(e)}`)
         console.log(e)
     }
 
@@ -48,7 +47,7 @@ function createStore(initialState) {
     let state = { ...initialState }
     const listeners = new Set()
     
-    console.log("Store: Base Store Setup")
+    appLog.info("Store: Base Store Setup")
 
     return {
 
@@ -178,7 +177,6 @@ function createRegistry(store) {
 
     })
 
-    console.log("Store: Component Registry Setup")
     return register
 
 } 

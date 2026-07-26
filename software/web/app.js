@@ -1,4 +1,6 @@
 import './store.js'
 import './serial/serialConnection.js'
 
-console.log("app.js loaded...!")
+import { appLog } from './appLog.js'
+
+appLog.info("App Started")
