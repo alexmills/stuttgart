@@ -198,13 +198,12 @@ const defaultState = {
     storageError: null,
 
     // Live Device Data - Overwritten with latest snapshot
-    voltageLatest: null,        // { timestamp, canhraw, canlraw, flags } | null
-    deviceStatusLatest: null,    // { timestamp, uptime, framesDropeed ... } | null
+    voltageLatest: null,            // { timestamp, canhraw, canlraw, flags } | null
+    deviceStatusLatest: null,       // { timestamp, uptime, framesDropeed ... } | null
 
-    // BUS_STATE event log
-    // TODO - Should events like ERROR_COUNTER and DIAG_FLAGS be surfaced
-    // for use in components?
-    busStateEvents: null 
+    busStateEvents: null,           // BUS_STATE event log
+    busErrorCountersLatest: null,   // { timestamp, eventType, type, tec, rec } | null
+    busDiagFlagsLatest: null        // { timestamp, eventType, type, flags } | null
 
 }
 

@@ -28,10 +28,27 @@ function handleLiveMessage(msg) {
             break;
             
         case 'BUS_STATE': {
-            const state = store.get()
-            store.set({ busStateEvents: [...state.busStateEvents, msg.data]})
+            handleBusStateEvent(msg.data)
+            break;
         }
     }
+
+}
+
+function handleBusStateEvent(event) {
+
+    const state = store.get()
+    const patch = { busStateEvents: [...state.busStateEvents, event]}
+
+    if (event.type === 'ERROR_COUNTER') {
+        patch.busErrorCountersLatest = event
+    }
+
+    else if (event.type === 'DIAG_FLAGS') {
+        patch.busDiagFlagsLatest = event
+    }
+
+    store.set(patch)
 
 }
 
