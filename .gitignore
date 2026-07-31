@@ -5,3 +5,5 @@ hardware/.DS_Store
 *.lck
 /hardware/Stuttgart-backups
 /datasheets
+/firmware/Stuttgart/build
+/firmware/Stuttgart/.vscode
