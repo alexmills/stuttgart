@@ -198,7 +198,7 @@ async function handleConnect() {
             return
         }
 
-        await port.open({ baudeRate: 115200 })
+        await port.open({ baudRate: 115200 })
         self.postMessage(connectedMsg())
 
         // Start reading data from the port
