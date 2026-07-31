@@ -35,15 +35,29 @@ function decodeDlc(dlcRaw, isFD) {
 
 /*
 
+    TIMESTAMP Decoding
+    ------------------
+
+    The 64bit TIMESTAMP is not a valid key type in IndexedDB, so we
+    convert it to a Number
+
+*/
+
+function readTimestamp(dv, offset) {
+    return Number(dv.getBigUint64(offset, true))
+}
+
+/*
+
     CAN Bus Frame
     -------------
 
     Field           Size    Notes
     ------------------------------------------------------------------------------------------
+    TIMESTAMP       8B      uint64, us
     ARBITRATION_ID  4B      uint32, 11-bit or 29-bit depending on IDE Flag
     FLAGS           1B      bit0 IDE, bit1 RTR, bit2 FDF (CAN FD), bit3 BRS, bits 5-7 Reserved
     DLC             1B      Raw DLC
-    TIMESTAMP       4B      uint32, us
     DATA            0-64B   Length from decoded DLC
 
 
@@ -53,10 +67,11 @@ export function decodeCanFrame(payload) {
 
     const dv = new DataView(payload.buffer, payload.byteOffset, payload.byteLength)
 
-    const arbId = dv.getUint32(0, true)
-    const flags = dv.getUint8(4)
-    const dlcRaw = dv.getUint8(5)
-    const timestamp = dv.getUint32(6, true)
+    const timestamp = readTimestamp(dv, 0)
+    const arbId = dv.getUint32(8, true)
+    const flags = dv.getUint8(12)
+    const dlcRaw = dv.getUint8(13)
+    
 
     const isRtr = !!(flags & 0x02)
     const isFD = !!(flags & 0x04)
@@ -81,7 +96,7 @@ export function decodeCanFrame(payload) {
 
     Field       Size    Notes
     -------------------------------------------------------
-    TIMESTAMP   4B      unit32, us
+    TIMESTAMP   8B      unit64, us
     CANH_RAW    2B      uint16, 0-4095
     CANL_RAW    2B      uint16, 0-4095
     FLAGS       1B      bit0 CAN H Fault, bit1 CAN L Fault
@@ -93,10 +108,10 @@ export function decodeVoltageSample(payload) {
     const dv = new DataView(payload.buffer, payload.byteOffset, payload.byteLength)
 
     return {
-        timestamp: dv.getUint32(0, true),
-        canhraw: dv.getUint16(4, true),
-        canlraw: dv.getUint16(6, true),
-        flags: dv.getUint8(8)
+        timestamp: readTimestamp(dv, 0),
+        canhraw: dv.getUint16(8, true),
+        canlraw: dv.getUint16(10, true),
+        flags: dv.getUint8(12)
     }
 
 }
@@ -108,7 +123,7 @@ export function decodeVoltageSample(payload) {
 
     Field               Size    Notes
     ---------------------------------------------------------------
-    TIMESTAMP           4B      uint32, us
+    TIMESTAMP           8B      uint64, us
     UPTIME              4B      uint32, seconds
     FRAMES_DROPPED      4B      Cumulative, CAN_FRAME ring buffer
     SAMPLES_DROPPED     4B      Cumulative, VOLTAGE_SAMPLE path
@@ -124,14 +139,14 @@ export function decodeDeviceStatus(payload) {
     const dv = new DataView(payload.buffer, payload.byteOffset, payload.byteLength)
 
     return {
-        timestamp: dv.getUint32(0, true),
-        uptime: dv.getUint32(4, true),
-        framesDropped: dv.getUint32(8, true),
-        samplesDropped: dv.getUint32(12, true),
-        busLoadPct: dv.getUint8(16),
-        msgCount: dv.getUint32(17, true),
-        mcuTempC: dv.getInt8(21),
-        ringBufferPct: dv.getUint8(22)
+        timestamp: readTimestamp(dv, 0),
+        uptime: dv.getUint32(8, true),
+        framesDropped: dv.getUint32(12, true),
+        samplesDropped: dv.getUint32(16, true),
+        busLoadPct: dv.getUint8(20),
+        msgCount: dv.getUint32(21, true),
+        mcuTempC: dv.getInt8(25),
+        ringBufferPct: dv.getUint8(26)
     }
 
 }
@@ -143,7 +158,7 @@ export function decodeDeviceStatus(payload) {
 
     Field       Size    Notes
     ---------------------------------------------------------
-    TIMESTAMP   4B      uint32, us
+    TIMESTAMP   8B      uint64, us
     EVENT_TYPE  1B      see below
     EVENT_DATA  varies  Depends on EVENT_TYPE
 
@@ -163,9 +178,9 @@ export function decodeBusState(payload) {
 
     const dv = new DataView(payload.buffer, payload.byteOffset, payload.byteLength)
 
-    const timestamp = dv.getUint32(0, true)
-    const eventType = dv.getUint8(4)
-    const eventOffset = 5
+    const timestamp = readTimestamp(dv, 0)
+    const eventType = dv.getUint8(8)
+    const eventOffset = 9
 
     let event
 
@@ -226,3 +241,31 @@ export function decodeBusState(payload) {
 
 }
 
+/*
+
+    Debug Log
+    ---------
+
+    Field       Size    Notes
+    ---------------------------------------------------------
+    TIMESTAMP   8B      uint64, us
+    LEVEL       1B      0=DEBUG,1=INFO,2=WARN,3=ERROR
+    MESSAGE     0-246B  ASCII, no NUL terminator
+
+*/
+
+const LOG_LEVELS = ['DEBUG', 'INFO', 'WARN', 'ERROR']
+
+export function decodeDebugLog(payload) {
+
+    const dv = new DataView(payload.buffer, payload.byteOffset, payload.byteLength)
+
+    const timestamp = readTimestamp(dv, 0)
+    const levelRaw = dv.getUint8(8)
+    const level = LOG_LEVELS[levelRaw] ?? 'UNKNOWN'
+
+    const message = new TextDecoder().decode(payload.slice(9))
+
+    return { timestamp, level, message }
+
+}

@@ -27,10 +27,14 @@ function handleLiveMessage(msg) {
             store.set({ deviceStatusLatest: msg.data })
             break;
             
-        case 'BUS_STATE': {
+        case 'BUS_STATE':
             handleBusStateEvent(msg.data)
             break;
-        }
+        
+        case 'DEBUG_LOG':
+            store.set({ debugLogEvents: [...state.debugLogEvents, msg.data]})
+            break;
+
     }
 
 }

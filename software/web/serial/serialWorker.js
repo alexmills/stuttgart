@@ -4,7 +4,8 @@ import {
     decodeCanFrame,
     decodeBusState,
     decodeDeviceStatus,
-    decodeVoltageSample
+    decodeVoltageSample,
+    decodeDebugLog
 } from "./payloadDecoders.js"
 import { 
     ClientMsg,
@@ -24,7 +25,8 @@ const PACKET_TYPES = {
     0x02: 'VOLTAGE_SAMPLE',
     0x03: 'BUS_STATE',
     0x04: 'CMD_RESPONSE',
-    0x05: 'DEVICE_STATUS'
+    0x05: 'DEVICE_STATUS',
+    0x06: 'DEBUG_LOG'
 }
 
 // Hybrid flush trigger - whichever limit hits first
@@ -115,6 +117,13 @@ const parser = new PacketParser(({ type, seq, payload }) => {
 
         case 'DEVICE_STATUS': {
             const decoded = decodeDeviceStatus(payload)
+            queueForPresistance(name, seq, decoded)
+            self.postMessage(liveMsg(name,seq,decoded))
+            break;
+        }
+
+        case 'DEBUG_LOG': {
+            const decoded = decodeDebugLog(payload)
             queueForPresistance(name, seq, decoded)
             self.postMessage(liveMsg(name,seq,decoded))
             break;

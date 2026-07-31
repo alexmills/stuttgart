@@ -201,9 +201,11 @@ const defaultState = {
     voltageLatest: null,            // { timestamp, canhraw, canlraw, flags } | null
     deviceStatusLatest: null,       // { timestamp, uptime, framesDropeed ... } | null
 
-    busStateEvents: null,           // BUS_STATE event log
+    busStateEvents: [],           // BUS_STATE event log
     busErrorCountersLatest: null,   // { timestamp, eventType, type, tec, rec } | null
-    busDiagFlagsLatest: null        // { timestamp, eventType, type, flags } | null
+    busDiagFlagsLatest: null,        // { timestamp, eventType, type, flags } | null
+
+    debugLogEvents: [],           // DEBUG_LOG event log
 
 }
 
