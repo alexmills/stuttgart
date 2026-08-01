@@ -7,3 +7,4 @@ hardware/.DS_Store
 /datasheets
 /firmware/Stuttgart/build
 /firmware/Stuttgart/.vscode
+/firmware/Stuttgart/test

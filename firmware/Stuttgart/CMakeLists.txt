@@ -44,9 +44,19 @@ pico_set_program_version(Stuttgart "0.1")
 pico_enable_stdio_uart(Stuttgart 0)
 pico_enable_stdio_usb(Stuttgart 0)
 
+target_sources(Stuttgart PRIVATE
+    usb_descriptors.c
+    crc16.c
+    packet.c
+)
+
 # Add the standard library to the build
 target_link_libraries(Stuttgart
-        pico_stdlib)
+        pico_stdlib
+        tinyusb_device
+        hardware_timer
+        pico_time
+)
 
 # Add the standard include files to the build
 target_include_directories(Stuttgart PRIVATE

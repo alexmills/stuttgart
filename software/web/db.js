@@ -72,7 +72,7 @@ export async function writeBatch(records) {
 
     // All add() calls issues synchonously back-to-back, required
     // so the transaction doesn't auto-commit early.
-    for (const record in records) {
+    for (const record of records) {
         store.add(record)
     }
 

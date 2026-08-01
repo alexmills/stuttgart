@@ -32,6 +32,7 @@ function handleLiveMessage(msg) {
             break;
         
         case 'DEBUG_LOG':
+            const state = store.get()
             store.set({ debugLogEvents: [...state.debugLogEvents, msg.data]})
             break;
 
