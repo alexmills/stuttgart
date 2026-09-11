@@ -8,3 +8,4 @@ hardware/.DS_Store
 /firmware/Stuttgart/build
 /firmware/Stuttgart/.vscode
 /firmware/Stuttgart/test
+/software/cli/build

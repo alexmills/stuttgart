@@ -3,7 +3,7 @@
 #define STG_VERSION "0.1.0"
 
 int main(void) {
-    printf("Stuggart %s\n", STG_VERSION);
+    printf("Stuttgart %s\n", STG_VERSION);
     return 0;
 }
 
