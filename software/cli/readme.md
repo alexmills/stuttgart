@@ -25,5 +25,5 @@ cmake --build build
 ## Run
 
 ```
-./build/stuttgart
+./build/stuttgart <port> 
 ```
